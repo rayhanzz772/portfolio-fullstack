@@ -1,15 +1,21 @@
 import React from 'react';
 import Header from './pages/Header';
 import Hero from './pages/Hero';
-import Projects from './pages/Projects'; // section baru
+import Projects from './pages/Projects';
+import Gallery from './pages/Gallery';
+import About from './pages/About';
+import { useLenis } from './hooks/useLenis'; // <-- ini kamu panggil
 
 function App() {
+  useLenis(); // activate smooth scroll
+
   return (
-      <div className="h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth">
-        <Header />
-        <Hero />
-        <Projects />
-      </div>
+    <div className="relative bg-black">
+      <Header />
+      <Hero />
+      <About />
+      <Gallery />
+    </div>
   );
 }
 
