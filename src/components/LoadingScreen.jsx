@@ -19,7 +19,7 @@ const GREETINGS = [
 const TOTAL_LOADING_TIME = 4000; 
 
 // Durasi setiap ucapan muncul di layar dalam milidetik
-const GREETING_INTERVAL = 400;
+const GREETING_INTERVAL = 300;
 
 // Durasi untuk animasi fade out
 const FADE_OUT_DURATION = 500;

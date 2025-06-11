@@ -24,7 +24,7 @@ const About = () => {
       <article className="w-[98vw] bg-[#0e0e0e] snap">
         <LayoutGroup>
 
-        <div className="min-h-screen bg-[#0e0e0e] max-w-screen-xl mx-auto items-center justify-center p-4">
+        <div className="min-h-screen bg-[#0e0e0e] max-w-screen-xl mx-auto items-center justify-center p-4 py-20">
   <div className="w-full h-full rounded-[32px] border border-[#d1d1d1] overflow-hidden shadow-md">
     <main
       className="bg-[#0e0e0e] flex flex-col justify-center items-center p-8 text-white w-full h-full"
