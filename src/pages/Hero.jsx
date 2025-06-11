@@ -3,6 +3,7 @@ import { TypeAnimation } from 'react-type-animation';
 import Button from '../components/ScrollDownButton';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import AnimatedBackground from '../components/AnimatedBackground';
 
 function Hero() {
   const sectionRef = useRef(null);
@@ -10,7 +11,6 @@ function Hero() {
 
   // Parallax transform
   const yParallax = useTransform(scrollY, [0, 800], [0, -150]);
-  const yParallax2 = useTransform(scrollY, [0, 800], [0, 100]);
 
   // Intersection observer
   const { ref: inViewRef, inView } = useInView({
@@ -25,22 +25,26 @@ function Hero() {
   };
 
   return (
+    
     <motion.div
-      style={{ y: yParallax2 }}
       className="sticky top-0 z-0 sm:px-4 md:px-6 max-w-screen-xl mx-auto flex flex-col items-start"
     >
+      
       <main
         ref={setRefs}
         className="relative min-h-screen flex flex-col justify-center items-start pt-0 bg-black z-0"
       >
+      <AnimatedBackground />
+
         <motion.div
           style={{ y: yParallax }}
           className="sticky top-0 z-0 max-w-screen-xl mx-auto flex flex-col justify-center"
         >
+          
           <div className="flex flex-col gap-6 md:gap-9 lg:pl-0">
             {inView && (
               <>
-                <h1 className="pb-0 text-white text-[2rem] xs:text-[1.5rem] md:text-[4.5rem] lg:text-[5rem] font-bold leading-[0.99] md:leading-[0.95] max-w-[350px] md:max-w-[800px]">
+                <h1 className="pb-0 text-white text-[2rem] xs:text-[1.5rem] md:text-[4.5rem] lg:text-[5rem] font leading-[0.99] md:leading-[0.95] max-w-[350px] md:max-w-[800px]">
                   <TypeAnimation
                     sequence={["Hi, I'm Rayhan — a Software Developer."]}
                     wrapper="span"

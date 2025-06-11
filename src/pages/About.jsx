@@ -51,6 +51,7 @@ const About = () => {
   {/* Row 2 */}
   <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-8">
     <div className="text-left">
+      
       <TextReveal className="text-4xl font-bold mb-4 md:text-5xl">
         About me.
       </TextReveal>

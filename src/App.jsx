@@ -9,6 +9,7 @@ import CustomCursor from './components/CustomCursor';
 import LoadingScreen from './components/LoadingScreen';
 import { motion } from 'framer-motion';
 
+
 const TOTAL_LOADING_TIME = 3000;
 const FADE_OUT_DURATION = 1000;
 
