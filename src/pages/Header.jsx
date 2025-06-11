@@ -23,30 +23,18 @@ function Header() {
 
   return (
     <header className="sticky top-10 z-50">
-      <div className="container mx-auto px-6 py-4">
+      <div className="px-4 sm:px-6 md:px-8 max-w-screen-xl mx-auto py-2">
         <div className="flex items-center justify-between">
           <div>
-            {/* Pastikan path ke logo.png benar dari direktori public */}
-            <img src="/logo.png" alt="Logo" className='h-7' />
+            <img src="/logo.png" alt="Logo" className="h-7" />
           </div>
-            <Button/>
+          <Button />
           <div className="md:hidden">
             <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-gray-600 focus:outline-none">
               {isMenuOpen ? <XIcon /> : <MenuIcon />}
             </button>
           </div>
         </div>
-        
-        {/* Mobile Menu */}
-        {isMenuOpen && (
-          <div className="md:hidden mt-4">
-            <nav className="flex flex-col space-y-4">
-              <a href="#features" className="text-gray-600 hover:text-indigo-600" onClick={() => setIsMenuOpen(false)}>Features</a>
-              <a href="#testimonials" className="text-gray-600 hover:text-indigo-600" onClick={() => setIsMenuOpen(false)}>Testimonials</a>
-              <a href="#contact" className="text-gray-600 hover:text-indigo-600" onClick={() => setIsMenuOpen(false)}>Contact</a>
-            </nav>
-          </div>
-        )}
       </div>
     </header>
   );

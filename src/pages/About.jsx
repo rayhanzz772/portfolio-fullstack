@@ -13,41 +13,72 @@ const About = () => {
     setViewportHeight(window.innerHeight);
   }, []);
 
-  const { scrollY } = useScroll();
 
   // Parallax dimulai saat user scroll ke layar kedua
-  const yParallax = useTransform(scrollY, [viewportHeight, viewportHeight + 500], [0, -150]);
 
   return (
     <motion.section
       ref={containerRef}
-      style={{ y: yParallax }}
       className="relative z-10 bg-[#0e0e0e] text-white"
     >
       <article className="w-[98vw] bg-[#0e0e0e] snap">
         <LayoutGroup>
-          <main className="bg-[#0e0e0e] flex flex-col justify-center items-center p-8 text-white h-screen" style={{ fontFamily: 'Poppins, Arial, sans-serif' }}>
-            
-            <AnimatedSeparator />
 
-            <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-              <div className="text-center md:text-left">
-                <TextReveal className="text-4xl font-bold mb-4 md:text-5xl">
-                  About me.
-                </TextReveal>
+        <div className="min-h-screen bg-[#0e0e0e] max-w-screen-xl mx-auto items-center justify-center p-4">
+  <div className="w-full h-full rounded-[32px] border border-[#d1d1d1] overflow-hidden shadow-md">
+    <main
+      className="bg-[#0e0e0e] flex flex-col justify-center items-center p-8 text-white w-full h-full"
+      style={{ fontFamily: 'Poppins, Arial, sans-serif' }}
+    >
 
-                <TextReveal className="text-xl font-thin mb-4 text-[#9c9c9c]">
-                  Enthusiastic about applying technical skills to tackle challenges and contribute to innovative projects in a professional, growth-focused environment.
-                </TextReveal>
-              </div>
+<div className="max-w-7xl w-full mx-auto grid grid-rows-2 divide-y divide-[#2f2f2f]">
+  {/* Row 1 */}
+  <div className="grid grid-cols-1 md:grid-cols-[4fr_1fr] gap-8 items-center py-8">
+    <div className="text-left">
+      <TextReveal className="text-4xl font mb-4 md:text-5xl">
+        Hello! I’m Rayhan,
+        a multidisciplinary Developer
+        with one years of experience
+        in the creative industry.
+      </TextReveal>
+    </div>
 
-              <div>
-                <img className="w-2/3 md:w-1/2 lg:w-1/3 ml-auto rounded-lg shadow-lg" src="/photos/saya.jpeg" alt="About me" />
-              </div>
-            </div>
+    <div className="flex justify-center md:justify-end">
 
-            <AnimatedSeparator />
-          </main>
+    </div>
+  </div>
+
+  {/* Row 2 */}
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-8">
+    <div className="text-left">
+      <TextReveal className="text-4xl font-bold mb-4 md:text-5xl">
+        About me.
+      </TextReveal>
+      <TextReveal className="text-xl font-thin mb-4 text-[#9c9c9c]">
+        With a strong background in design and
+        development, I collaborate remotely with
+        cross-functional teams to craft compelling
+        experiences that drive meaningful engagement.
+        Want to know more about me? click the link below
+      </TextReveal>
+    </div>
+
+    <div className="flex justify-center md:justify-end">
+      <img
+        className="w-2/3 md:w-1/2 lg:w-1/3 rounded-lg shadow-lg"
+        src="/photos/saya.jpeg"
+        alt="About me again"
+      />
+    </div>
+  </div>
+</div>
+
+
+    </main>
+  </div>
+</div>
+
+
         </LayoutGroup>
       </article>
     </motion.section>

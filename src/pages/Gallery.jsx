@@ -118,7 +118,6 @@ useEffect(() => {
 const { scrollY } = useScroll();
 
 // Parallax dimulai saat user scroll ke layar kedua
-const yParallax = useTransform(scrollY, [viewportHeight, viewportHeight + 500], [0, -350]);
 
   // Varian untuk kontainer galeri, mengatur animasi stagger (bergiliran)
   const galleryContainerVariants = {
@@ -141,10 +140,9 @@ const yParallax = useTransform(scrollY, [viewportHeight, viewportHeight + 500], 
     <>
     <motion.section
       ref={Ref}
-      style={{ y: yParallax }}
-      className="relative z-10 min-h-screen bg-[#0e0e0e] text-white"
+      className="relative z-10 min-h-screen text-white"
     >
-        <article id="gallery" ref={containerRef} className="w-[98vw] bg-[#0e0e0e] snap">
+        <article id="gallery" ref={containerRef} className="w-[98vw] snap">
             {/* Isi project */}
 
     <LayoutGroup>
@@ -152,7 +150,7 @@ const yParallax = useTransform(scrollY, [viewportHeight, viewportHeight + 500], 
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center min-h-screen">
           
             <div className="text-center md:text-left">
-                <TextReveal className="text-6xl font-bold mb-4 md:text-m">
+                <TextReveal className="text-6xl font-bold text-white mb-4 md:text-m">
                         My Gallery Projects
                 </TextReveal>
 
