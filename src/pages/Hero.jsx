@@ -32,6 +32,7 @@ function Hero() {
       
       <main
         ref={setRefs}
+        style={{fontFamily: 'Poppins, Arial, sans-serif'}}
         className="relative min-h-screen flex flex-col justify-center items-start pt-0 bg-black z-0"
       >
       <AnimatedBackground />
@@ -44,7 +45,7 @@ function Hero() {
           <div className="flex flex-col gap-6 md:gap-9 lg:pl-0">
             {inView && (
               <>
-                <h1 className="pb-0 text-white text-[2rem] xs:text-[1.5rem] md:text-[4.5rem] lg:text-[5rem] font leading-[0.99] md:leading-[0.95] max-w-[350px] md:max-w-[800px]">
+                <h1 className="pb-0 text-white text-[2rem] xs:text-[1.5rem] md:text-[4rem] lg:text-[4.5rem] leading-[0.99] md:leading-[0.95] max-w-[350px] md:max-w-[800px]">
                   <TypeAnimation
                     sequence={["Hi, I'm Rayhan — a Software Developer."]}
                     wrapper="span"

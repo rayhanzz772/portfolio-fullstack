@@ -35,7 +35,7 @@ const About = () => {
   {/* Row 1 */}
   <div className="grid grid-cols-1 md:grid-cols-[4fr_1fr] gap-8 items-center py-8">
     <div className="text-left">
-      <TextReveal className="text-4xl font mb-4 md:text-5xl">
+      <TextReveal className="text-4xl font-thin mb-4 md:text-5xl">
         Hello! I’m Rayhan,
         a multidisciplinary Developer
         with one years of experience
