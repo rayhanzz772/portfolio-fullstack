@@ -4,6 +4,7 @@ import Button from '../components/ScrollDownButton';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import AnimatedBackground from '../components/AnimatedBackground';
+import TextReveal from '../components/TextReveal';
 
 function Hero() {
   const sectionRef = useRef(null);
@@ -33,7 +34,7 @@ function Hero() {
 <main
   ref={setRefs}
   style={{ fontFamily: 'Mori, sans-serif' }}
-  className="relative min-h-screen flex flex-col justify-start items-start pt-24 bg-black z-0"
+  className="relative min-h-screen flex flex-col justify-start items-start pt-28 bg-black z-0"
 >
 
       <AnimatedBackground />
@@ -55,9 +56,9 @@ function Hero() {
                   />
                 </h1>
 
-                <p className="pb-3 text-base xs:text-sm md:text-lg text-[#9c9c9c] lg:text-xl font-thin leading-snug max-w-[350px] md:max-w-[800px]">
-                  We partner with scientists, engineers and operators to build companies that slash emissions, remove carbon, and cool the planet.
-                </p>
+                  <TextReveal className="text-4xl font-bold mb-4 md:text-4xl">
+                    <span className="inline hover-target bg-white text-black font-extralight px-1 rounded-sm">We partner with scientists, engineers and operators to build companies that slash emissions, remove carbon, and cool the planet.</span>
+                  </TextReveal>
 
                 <Button />
               </>

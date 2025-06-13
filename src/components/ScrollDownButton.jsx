@@ -45,7 +45,7 @@ const StyledWrapper = styled.div`
     width: 140px;
     border-radius: 50px;
     transition-duration: 0.3s;
-    background-color: rgb(161, 255, 20);
+    background-color: rgb(250, 204, 21);
     align-items: center;
   }
 

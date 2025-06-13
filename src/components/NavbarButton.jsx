@@ -5,7 +5,7 @@ const Button = () => {
   return (
     <StyledWrapper>
       <button className="button">
-        <svg className="svgIcon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"><path d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z"/></svg>
+        <svg className="svgIcon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z"/></svg>
         Contact
       </button>
     </StyledWrapper>
@@ -20,7 +20,7 @@ const StyledWrapper = styled.div`
     align-items: center;
     justify-content: flex-start;
     gap: 10px;
-    background-color: rgb(161, 255, 20);
+    background-color: rgb(250, 204, 21);
     border-radius: 30px;
     color: rgb(19, 19, 19);
     font-weight: 600;
@@ -43,7 +43,7 @@ const StyledWrapper = styled.div`
   }
 
   .button:hover {
-    background-color: rgb(192, 255, 20);
+    background-color: rgb(250, 204, 21);
     transition-duration: .5s;
   }
 

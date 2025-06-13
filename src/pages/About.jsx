@@ -21,6 +21,7 @@ const About = () => {
       ref={containerRef}
       className="relative z-10 bg-[#0e0e0e] text-white"
     >
+      
       <article className="w-[98vw] bg-[#0e0e0e] snap">
         <LayoutGroup>
 
@@ -35,16 +36,16 @@ const About = () => {
   {/* Row 1 */}
   <div className="grid grid-cols-1 md:grid-cols-[4fr_1fr] gap-8 items-center py-8">
     <div className="text-left">
-      <TextReveal className="text-4xl font-thin mb-4 md:text-5xl">
-        Hello! I’m Rayhan,
-        a multidisciplinary Developer
-        with one years of experience
-        in the creative industry.
-      </TextReveal>
+      <div className="text-4xl font-thin mb-4 md:text-5xl leading-snug">
+        <TextReveal>
+          Hello! I’m <span className="inline-block bg-white text-black px-1 rounded">Rayhan</span>,
+          a multidisciplinary Developer
+          with one year of experience
+          in the creative industry.
+        </TextReveal>
+      </div>
     </div>
-
     <div className="flex justify-center md:justify-end">
-
     </div>
   </div>
 
@@ -53,9 +54,11 @@ const About = () => {
     <div className="text-left">
       
       <TextReveal className="text-4xl font-bold mb-4 md:text-5xl">
-        About me.
+        <span className="inline bg-yellow-400 text-black font-extralight px-1 rounded-sm">About</span> me.
       </TextReveal>
-      <TextReveal className="text-xl font-thin mb-4 text-[#9c9c9c]">
+
+      
+      <TextReveal className="text-xl hover-target font-thin mb-4 text-[#9c9c9c]">
         With a strong background in design and
         development, I collaborate remotely with
         cross-functional teams to craft compelling

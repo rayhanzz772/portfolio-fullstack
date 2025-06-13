@@ -27,3 +27,28 @@
   font-weight: 600;
   font-style: normal;
 }
+
+
+/* Styling untuk kursor kustom */
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 24px; /* Ukuran awal kursor */
+  height: 24px; /* Ukuran awal kursor */
+  background-color: white; /* Warna dasar untuk efek inverted */
+  border-radius: 50%;
+  pointer-events: none; /* Agar kursor tidak menghalangi interaksi mouse */
+  z-index: 9999;
+  mix-blend-mode: difference; /* Efek inverted! */
+  transition: width 0.3s ease, height 0.3s ease, transform 0.1s linear;
+  /* Pusatkan kursor ke pointer mouse */
+  transform-origin: center center;
+  transform: translate(-50%, -50%);
+}
+
+/* Styling saat kursor membesar */
+.custom-cursor.hovering {
+  width: 60px; /* Ukuran saat hover */
+  height: 60px; /* Ukuran saat hover */
+}
