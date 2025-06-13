@@ -28,7 +28,7 @@ const About = () => {
   <div className="w-full h-full rounded-[32px] border border-[#d1d1d1] overflow-hidden shadow-md">
     <main
       className="bg-[#0e0e0e] flex flex-col justify-center items-center p-8 text-white w-full h-full"
-      style={{ fontFamily: 'Poppins, Arial, sans-serif' }}
+      style={{ fontFamily: 'Mori, Arial, sans-serif' }}
     >
 
 <div className="max-w-7xl w-full mx-auto grid grid-rows-2 divide-y divide-[#2f2f2f]">

@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+::selection {
+  color: black;
+  background: white;
+}
+
+@font-face {
+  font-family: 'Mori';
+  src: url('/fonts/PPMori-ExtraLight.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mori';
+  src: url('/fonts/PPMori-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mori';
+  src: url('/fonts/PPMori-SemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
