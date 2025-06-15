@@ -13,15 +13,15 @@ const Gallery = () => {
       style={{ fontFamily: 'Mori, Arial, sans-serif' }}
     >
       <article className="w-[98vw] min-h-screen max-w-screen-xl p-4 mx-auto flex-col justify-start">
-        <TextReveal className="text-4xl md:text-6xl font-light text-right mt-20">
+        <h1 className="text-4xl md:text-6xl font-light text-right mt-20">
           <span className="font-bold text-yellow-400">Design</span> services & more.
-        </TextReveal>
+        </h1>
 
       {/* Project Android */}
       <section className="py-20 bg-[#0e0e0e] text-white">
-        <TextReveal className="text-4xl md:text-5xl font-light text-left">
+        <h1 className="text-4xl md:text-5xl font-light text-left">
           <span className="font-bold text-yellow-400">*</span> Android Programming
-        </TextReveal>
+        </h1>
         <AnimatedSeparator />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-8">
@@ -41,20 +41,18 @@ const Gallery = () => {
             transition={{ duration: 0.6 }}
             className="flex justify-center md:justify-end"
           >
-          <img
-            className="w-4/5 md:w-3/4 lg:w-2/3 rounded-lg shadow-lg"
-            src="/photos/android.jpg"
-            alt="Android Project"
-          />
+          <h1>
+            *
+          </h1>
           </motion.div>
         </div>
       </section>
 
       {/* Project Website */}
       <section className="py-20 text-white">
-        <TextReveal className="text-4xl md:text-5xl font-light text-left">
+        <h1 className="text-4xl md:text-5xl font-light text-left">
           <span className="font-bold text-yellow-400">*</span> Website Programming
-        </TextReveal>
+        </h1>
         <AnimatedSeparator />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-8">
@@ -64,11 +62,9 @@ const Gallery = () => {
             transition={{ duration: 0.6 }}
             className="order-2 md:order-1 flex justify-center md:justify-start"
           >
-            <img
-              className="w-4/5 md:w-3/4 lg:w-2/3 rounded-lg shadow-lg"
-              src="/photos/web.png"
-              alt="Web Project"
-            />
+          <h1>
+           *  {/* Animaion here */}
+          </h1>
           </motion.div>
 
           <motion.div
@@ -86,9 +82,9 @@ const Gallery = () => {
 
       {/* Project UI/UX */}
       <section className="py-20 text-white">
-        <TextReveal className="text-4xl md:text-5xl font-light text-left">
+        <h1 className="text-4xl md:text-5xl font-light text-left">
           <span className="font-bold text-yellow-400">*</span> UI/UX Design
-        </TextReveal>
+        </h1>
         <AnimatedSeparator />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-8">
@@ -108,11 +104,9 @@ const Gallery = () => {
             transition={{ duration: 0.6 }}
             className="flex justify-center md:justify-end"
           >
-            <img
-              className="w-4/5 md:w-3/4 lg:w-2/3 rounded-lg shadow-lg"
-              src="/photos/uiux.png"
-              alt="UIUX Design"
-            />
+          <h1>
+            *
+          </h1>
           </motion.div>
         </div>
       </section>
