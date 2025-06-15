@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Button = () => {
+const ScrollDownButton = () => {
   return (
     <StyledWrapper>
       <button className="button">
@@ -72,4 +72,4 @@ const StyledWrapper = styled.div`
     transition-duration: 0.3s;
   }`;
 
-export default Button;
+export default ScrollDownButton;

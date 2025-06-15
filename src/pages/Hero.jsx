@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { TypeAnimation } from 'react-type-animation';
-import Button from '../components/ScrollDownButton';
+import ScrollDownButton from '../components/ScrollDownButton';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import AnimatedBackground from '../components/AnimatedBackground';
@@ -60,7 +60,7 @@ function Hero() {
                     <span className="inline hover-target bg-white text-black font-extralight px-1 rounded-sm">We partner with scientists, engineers and operators to build companies that slash emissions, remove carbon, and cool the planet.</span>
                   </TextReveal>
 
-                <Button />
+                <ScrollDownButton />
               </>
             )}
           </div>

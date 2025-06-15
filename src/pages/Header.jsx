@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Button from '../components/NavbarButton'; // section baru
+import NavbarButton from '../components/NavbarButton'; // section baru
 
 // Definisikan kedua ikon di sini
 const MenuIcon = () => (
@@ -28,7 +28,7 @@ function Header() {
           <div>
             <img src="/logo.png" alt="Logo" className="h-7" />
           </div>
-          <Button />
+          <NavbarButton />
           <div className="md:hidden">
             <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-gray-600 focus:outline-none">
               {isMenuOpen ? <XIcon /> : <MenuIcon />}

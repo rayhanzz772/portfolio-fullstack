@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Button = () => {
+const NavbarButton = () => {
   return (
     <StyledWrapper>
       <button className="button">
@@ -28,7 +28,7 @@ const StyledWrapper = styled.div`
     position: relative;
     cursor: pointer;
     transition-duration: .2s;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
+    box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.75);
     padding-left: 8px;
     transition-duration: .5s;
   }
@@ -57,4 +57,4 @@ const StyledWrapper = styled.div`
     transition-duration: 1.5s;
   }`;
 
-export default Button;
+export default NavbarButton;

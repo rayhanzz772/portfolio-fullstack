@@ -1,8 +1,8 @@
 import React, { useRef, useState, useEffect } from "react";
 import TextReveal from '../components/TextReveal';
-import AnimatedSeparator from '../components/AnimatedSeparator';
 import { motion, useScroll, useTransform } from "framer-motion";
 import { LayoutGroup } from "framer-motion";
+import RunningLogos from '../components/RunningLogos'; // tambahkan di atas
 
 const About = () => {
   const containerRef = useRef(null);
@@ -25,7 +25,7 @@ const About = () => {
       <article className="w-[98vw] bg-[#0e0e0e] snap">
         <LayoutGroup>
 
-        <div className="min-h-screen bg-[#0e0e0e] max-w-screen-xl mx-auto items-center justify-center p-4 py-20">
+        <div className="min-h-screen bg-[#0e0e0e] max-w-screen-xl mx-auto items-center justify-center p-4 pt-20">
   <div className="w-full h-full rounded-[32px] border border-[#d1d1d1] overflow-hidden shadow-md">
     <main
       className="bg-[#0e0e0e] flex flex-col justify-center items-center p-8 text-white w-full h-full"
@@ -80,11 +80,18 @@ const About = () => {
 
     </main>
   </div>
+
+    {/* Running text here */}
+
+    <RunningLogos />
+
 </div>
 
 
         </LayoutGroup>
+
       </article>
+
     </motion.section>
   );
 };
