@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 import TextReveal from '../components/TextReveal';
 import { motion, useScroll, useTransform } from "framer-motion";
 import { LayoutGroup } from "framer-motion";
-import RunningLogos from '../components/RunningLogos'; // tambahkan di atas
+
 
 const About = () => {
   const containerRef = useRef(null);
@@ -68,11 +68,18 @@ const About = () => {
     </div>
 
     <div className="flex justify-center md:justify-end">
+                <motion.div
+                  initial={{ opacity: 0, x: 40 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.6 }}
+                  className="order-2 md:order-1 flex justify-center md:justify-end"
+                >
       <img
         className="w-2/3 md:w-1/2 lg:w-1/3 rounded-lg shadow-lg"
         src="/photos/saya.jpeg"
         alt="About me again"
       />
+      </motion.div>
     </div>
   </div>
 </div>
@@ -83,7 +90,6 @@ const About = () => {
 
     {/* Running text here */}
 
-    <RunningLogos />
 
 </div>
 

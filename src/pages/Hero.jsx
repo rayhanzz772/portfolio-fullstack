@@ -56,7 +56,7 @@ function Hero() {
                   />
                 </h1>
 
-                  <TextReveal className="text-4xl font-bold mb-4 md:text-4xl">
+                  <TextReveal className="text-xl font-bold mb-4 md:text-4xl">
                     <span className="inline hover-target bg-white text-black font-extralight px-1 rounded-sm">We partner with scientists, engineers and operators to build companies that slash emissions, remove carbon, and cool the planet.</span>
                   </TextReveal>
 
