@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Header from './pages/Header';
 import Hero from './pages/Hero';
-import Projects from './pages/Projects';
 import Gallery from './pages/Gallery';
 import About from './pages/About';
 import { useLenis } from './hooks/useLenis';
