@@ -26,7 +26,7 @@ function Header() {
       <div className="px-4 sm:px-6 md:px-8 max-w-screen-xl mx-auto py-2">
         <div className="flex items-center justify-between">
           <div>
-            <img src="/logo.png" alt="Logo" className="h-7" />
+            <img src="./logo.png" alt="Logo" className="h-7" />
           </div>
           <NavbarButton />
           <div className="md:hidden">
