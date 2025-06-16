@@ -5,7 +5,7 @@ const NavbarButton = () => {
   return (
     <StyledWrapper>
       <a
-        href="https://rayhanportfolio.super.site"
+        href="mailto:rayhanzz772@gmail.com"
         target="_blank"
         rel="noopener noreferrer"
         className="button"

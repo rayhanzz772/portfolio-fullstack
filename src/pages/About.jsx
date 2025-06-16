@@ -32,11 +32,11 @@ const About = () => {
       style={{ fontFamily: 'Mori, Arial, sans-serif' }}
     >
 
-<div className="max-w-7xl w-full mx-auto grid grid-rows-2 divide-y divide-[#2f2f2f]">
+<div className="max-w-7xl w-full mx-auto grid divide-y divide-[#2f2f2f]">
   {/* Row 1 */}
-  <div className="grid grid-cols-1 md:grid-cols-[4fr_1fr] gap-8 items-center py-8">
+  <div className="grid grid-cols-1 md:grid-cols-[4fr_1fr] gap-8 items-center py-8 md:py-12">
     <div className="text-left">
-      <div className="text-4xl font-thin mb-4 md:text-5xl leading-snug">
+      <div className="text-2xl font-thin mb-4 md:text-5xl leading-snug">
         <TextReveal>
           Hello! I’m <span className="inline-block bg-white text-black px-1 rounded">Rayhan</span>,
           student at Politeknik Negeri Semarang with 1+ years of
