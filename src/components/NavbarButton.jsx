@@ -28,9 +28,9 @@ const StyledWrapper = styled.div`
     position: relative;
     cursor: pointer;
     transition-duration: .2s;
-    box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.75);
     padding-left: 8px;
     transition-duration: .5s;
+    font-family: 'Mori', sans-serif;
   }
 
   .svgIcon {

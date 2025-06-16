@@ -117,11 +117,8 @@ const Gallery = () => {
           </motion.div>
         </div>
           <div className="flex justify-start mt-10 items-start">
-            <ScrollingStripes/>
           </div>
       </section>
-
-    <RunningLogos />
 
 
       </article>

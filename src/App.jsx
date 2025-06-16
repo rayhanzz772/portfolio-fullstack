@@ -3,7 +3,7 @@ import Header from './pages/Header';
 import Hero from './pages/Hero';
 import Gallery from './pages/Gallery';
 import About from './pages/About';
-import Projects from './pages/Projects';
+import StaticAnimatedText from './components/StaticAnimatedText';
 import { useLenis } from './hooks/useLenis';
 import CustomCursor from './components/CustomCursor';
 import LoadingScreen from './components/LoadingScreen';
@@ -50,8 +50,13 @@ function App() {
         <Hero />
         <About />
         <Gallery />
-        <Projects />
       </motion.div>
+        <StaticAnimatedText texts={[
+          "Our creative journey",
+          "Driven by innovation",
+          "Bringing ideas to life",
+          "Click here for more."
+        ]} />
     </>
   );
 }
