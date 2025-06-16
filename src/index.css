@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 ::selection {
-  color: black;
-  background: white;
+  color: rgb(250, 204, 21);
+  background: black;
 }
 
 @font-face {

@@ -3,10 +3,12 @@ import Header from './pages/Header';
 import Hero from './pages/Hero';
 import Gallery from './pages/Gallery';
 import About from './pages/About';
+import Projects from './pages/Projects';
 import { useLenis } from './hooks/useLenis';
 import CustomCursor from './components/CustomCursor';
 import LoadingScreen from './components/LoadingScreen';
 import { motion } from 'framer-motion';
+
 
 
 const TOTAL_LOADING_TIME = 3000;
@@ -48,6 +50,7 @@ function App() {
         <Hero />
         <About />
         <Gallery />
+        <Projects />
       </motion.div>
     </>
   );
