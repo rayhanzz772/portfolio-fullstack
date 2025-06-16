@@ -4,10 +4,17 @@ import styled from 'styled-components';
 const NavbarButton = () => {
   return (
     <StyledWrapper>
-      <button className="button">
-        <svg className="svgIcon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z"/></svg>
+      <a
+        href="https://rayhanportfolio.super.site"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="button"
+      >
+        <svg className="svgIcon" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+          <path d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z" />
+        </svg>
         Contact
-      </button>
+      </a>
     </StyledWrapper>
   );
 }
