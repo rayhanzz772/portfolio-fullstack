@@ -84,7 +84,9 @@ const StaticAnimatedText = ({ texts = [] }) => {
       </div>
 
       <div className="flex-1 flex items-center justify-center w-full">
-        <h1
+        <a
+          href="https://rayhanportfolio.super.site"
+          target="_blank"
           ref={textRef}
           onMouseEnter={() => setIsHovering(true)}
           onMouseLeave={() => setIsHovering(false)}
@@ -99,7 +101,7 @@ const StaticAnimatedText = ({ texts = [] }) => {
           }}
         >
           {texts[currentText]}
-        </h1>
+        </a>
       </div>
 
       <div className="w-full">
