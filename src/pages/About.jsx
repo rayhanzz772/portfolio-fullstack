@@ -39,9 +39,8 @@ const About = () => {
       <div className="text-4xl font-thin mb-4 md:text-5xl leading-snug">
         <TextReveal>
           Hello! I’m <span className="inline-block bg-white text-black px-1 rounded">Rayhan</span>,
-          a multidisciplinary Developer
-          with one year of experience
-          in the creative industry.
+          student at Politeknik Negeri Semarang with 1+ years of
+          experience in developing scalable web and mobile apps.
         </TextReveal>
       </div>
     </div>
