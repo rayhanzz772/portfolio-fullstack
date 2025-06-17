@@ -13,20 +13,18 @@ const NavbarButton = () => {
         <svg className="svgIcon" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
           <path d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z" />
         </svg>
-        Contact
+        <span className="text">Contact</span>
       </a>
     </StyledWrapper>
   );
-}
+};
 
 const StyledWrapper = styled.div`
   .button {
-    width: 110px;
     height: 40px;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    gap: 10px;
+    justify-content: center;
     background-color: rgb(250, 204, 21);
     border-radius: 30px;
     color: rgb(19, 19, 19);
@@ -34,10 +32,10 @@ const StyledWrapper = styled.div`
     border: none;
     position: relative;
     cursor: pointer;
-    transition-duration: .2s;
-    padding-left: 8px;
-    transition-duration: .5s;
+    transition-duration: 0.5s;
+    padding: 0 16px;
     font-family: 'Mori', sans-serif;
+    gap: 10px;
   }
 
   .svgIcon {
@@ -45,23 +43,39 @@ const StyledWrapper = styled.div`
     transition-duration: 1.5s;
   }
 
-  .bell path {
-    fill: rgb(19, 19, 19);
-  }
-
   .button:hover {
     background-color: rgb(250, 204, 21);
-    transition-duration: .5s;
   }
 
   .button:active {
     transform: scale(0.97);
-    transition-duration: .2s;
+    transition-duration: 0.2s;
   }
 
   .button:hover .svgIcon {
     transform: rotate(370deg);
     transition-duration: 1.5s;
-  }`;
+  }
+
+  /* ✅ Mobile (show only icon) */
+  @media (max-width: 640px) {
+    .text {
+      display: none;
+    }
+    .svgIcon {
+      display: block;
+    }
+  }
+
+  /* ✅ Desktop (show only text) */
+  @media (min-width: 641px) {
+    .svgIcon {
+      display: none;
+    }
+    .text {
+      display: block;
+    }
+  }
+`;
 
 export default NavbarButton;

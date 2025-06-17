@@ -22,10 +22,10 @@ const About = () => {
       className="relative z-10 bg-[#0e0e0e] text-white"
     >
       
-      <article className="w-[98vw] bg-[#0e0e0e] snap">
+      <article className="w-full bg-[#0e0e0e] snap">
         <LayoutGroup>
 
-        <div className="min-h-screen bg-[#0e0e0e] max-w-screen-xl mx-auto items-center justify-center p-4 pt-20">
+        <div className="min-h-screen bg-[#0e0e0e] w-full max-w-screen-xl mx-auto items-center justify-center p-4 pt-20">
   <div className="w-full h-full rounded-[32px] border border-[#d1d1d1] overflow-hidden shadow-md">
     <main
       className="bg-[#0e0e0e] flex flex-col justify-center items-center p-8 text-white w-full h-full"

@@ -44,7 +44,7 @@ function App() {
         initial={{ opacity: 0 }}
         animate={isContentVisible ? { opacity: 1 } : {}}
         transition={{ duration: 0.8, ease: 'easeOut' }}
-        className="relative cursor-none bg-black"
+        className="relative cursor-none bg-black overflow-x-hidden"
       >
         <Header />
         <Hero />
