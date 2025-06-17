@@ -26,7 +26,7 @@ const Gallery = () => {
       {/* Project Android */}
       <section className="py-20 bg-[#0e0e0e] text-white">
         <TextReveal className="text-4xl md:text-5xl font-light text-left">
-          <span className="font-bold text-yellow-400">*</span> Android Programming
+          <span className="font-bold text-yellow-400">*</span> Android Development
         </TextReveal>
 
         <AnimatedSeparator />
@@ -58,7 +58,7 @@ const Gallery = () => {
       {/* Project Website */}
       <section className="py-20 text-white">
         <TextReveal className="text-4xl md:text-5xl font-light text-left">
-          <span className="font-bold text-yellow-400">*</span> Website Programming
+          <span className="font-bold text-yellow-400">*</span> Website Development
         </TextReveal>
         <AnimatedSeparator />
 
