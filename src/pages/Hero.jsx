@@ -41,13 +41,13 @@ function Hero() {
 
         <motion.div
           style={{ y: yParallax }}
-          className="sticky top-0 z-0 py-10 max-w-screen-xl mx-auto flex flex-col justify-center"
+          className="sticky top-0 z-0 py-10 md:pt-20 max-w-screen-xl mx-auto flex flex-col justify-center"
         >
           
           <div className="flex flex-col gap-6 md:gap-9 lg:pl-0">
             {inView && (
               <>
-                <h1 className="pb-0 text-white text-[4rem] font-semibold xs:text-[1.5rem] md:text-[4rem] lg:text-[4.5rem] leading-[0.99] md:leading-[0.95] max-w-[350px] md:max-w-[800px]">
+                <h1 className="pb-0 text-white text-[3rem] font-semibold xs:text-[1.5rem] md:text-[4rem] lg:text-[4.5rem] leading-[0.99] md:leading-[0.95] max-w-[350px] md:max-w-[800px]">
                   <TypeAnimation
                     sequence={["Hi, I'm Rayhan — a Software Developer."]}
                     wrapper="span"
@@ -56,8 +56,8 @@ function Hero() {
                   />
                 </h1>
 
-                  <TextReveal className="text-4xl font-bold mb-4 md:text-4xl">
-                    <span className="inline hover-target bg-white text-black font-extralight px-1 rounded-sm">Experience in developing scalable web and mobile apps.</span>
+                  <TextReveal className="text-3xl font-bold mb-4 md:text-3xl">
+                    <span className="inline hover-target bg-white text-black font-extralight px-1 rounded-sm">Experience in developing scalable web and mobile apps that drive innovation and deliver impactful user experiences.</span>
                   </TextReveal>
 
                 <ScrollDownButton />

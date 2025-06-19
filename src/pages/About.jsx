@@ -28,19 +28,23 @@ const About = () => {
         <div className="min-h-screen bg-[#0e0e0e] w-full max-w-screen-xl mx-auto items-center justify-center p-4 pt-20">
   <div className="w-full h-full rounded-[32px] border border-[#d1d1d1] overflow-hidden shadow-md">
     <main
-      className="bg-[#0e0e0e] flex flex-col justify-center items-center p-8 text-white w-full h-full"
+      className="bg-[#0e0e0e] flex flex-col justify-center items-center py-4 px-4 md:p-10 text-white w-full h-full"
       style={{ fontFamily: 'Mori, Arial, sans-serif' }}
     >
 
 <div className="max-w-7xl w-full mx-auto grid divide-y divide-[#2f2f2f]">
   {/* Row 1 */}
-  <div className="grid grid-cols-1 md:grid-cols-[4fr_1fr] gap-8 items-center py-8 md:py-12">
+  <div className="grid grid-cols-1 md:grid-cols-[4fr_1fr] gap-8 items-center pt-8 md:py-12">
     <div className="text-left">
       <div className="text-2xl font-thin mb-4 md:text-5xl leading-snug">
         <TextReveal>
-          Hello! I’m <span className="inline-block bg-white text-black px-1 rounded">Rayhan</span>,
+          <span className="text-4xl md:text-5xl"><span></span>Hello! <span className="inline-block bg-none text-white px-1 rounded">I’m Rayhan</span></span>
+
+          <span className="sr-only md:not-sr-only">, </span>
+          <span className="text-[#9c9c9c] sm:text-[#9c9c9c] lg:text-white">
           student at Politeknik Negeri Semarang with 1+ years of
           experience in developing scalable web and mobile apps.
+          </span>
         </TextReveal>
       </div>
     </div>
