@@ -49,20 +49,7 @@ const Gallery = () => {
               transition={{ duration: 0.6 }}
               className="flex justify-center md:justify-end"
             >
-              <a
-                href="https://rayhanportfolio.super.site/android-projects" // Ganti dengan link proyek sebenarnya
-                target='_blank'
-                className="relative group rounded-lg overflow-hidden shadow-lg transition-transform transform hover:scale-105"
-              >
-                <img
-                  src="./photos/floodsense.png" // Ganti dengan path gambar proyek
-                  alt="Project Preview"
-                  className="w-84 h-60 object-cover rounded-lg"
-                />
-                <div className="absolute inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <span className="text-white font-semibold tracking-wide">See Project</span>
-                </div>
-              </a>
+             <h1>*</h1>
             </motion.div>
         </div>
       </section>
@@ -81,20 +68,7 @@ const Gallery = () => {
               transition={{ duration: 0.6 }}
               className="flex justify-center md:justify-start"
             >
-              <a
-                href="https://rayhanportfolio.super.site/web-projects" // Ganti dengan link proyek sebenarnya
-                target='_blank'
-                className="relative group rounded-lg overflow-hidden shadow-lg transition-transform transform hover:scale-105"
-              >
-                <img
-                  src="./photos/web.png" // Ganti dengan path gambar proyek
-                  alt="Project Preview"
-                  className="w-84 h-60 object-cover rounded-lg"
-                />
-                <div className="absolute inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <span className="text-white font-semibold tracking-wide">See Project</span>
-                </div>
-              </a>
+              <h1>*</h1>
             </motion.div>
 
           <motion.div
@@ -140,20 +114,7 @@ const Gallery = () => {
               transition={{ duration: 0.6 }}
               className="flex justify-center md:justify-end"
             >
-              <a
-                href="https://rayhanportfolio.super.site/uiux-projects" // Ganti dengan link proyek sebenarnya
-                target='_blank'
-                className="relative group rounded-lg overflow-hidden shadow-lg transition-transform transform hover:scale-105"
-              >
-                <img
-                  src="./photos/ui ux.png" // Ganti dengan path gambar proyek
-                  alt="Project Preview"
-                  className="w-84 h-60 object-cover rounded-lg"
-                />
-                <div className="absolute inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <span className="text-white font-semibold tracking-wide">See Project</span>
-                </div>
-              </a>
+              <h1>*</h1>
             </motion.div>
 
           </motion.div>

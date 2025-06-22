@@ -21,7 +21,7 @@ export default function AnimatedSeparator() {
       initial={{ width: 0, opacity: 0 }}
       animate={controls}
       transition={{ duration: 1.2, ease: "easeOut" }}
-      className="h-px bg-white rounded-full my-6"
+      className="h-px bg-black rounded-full my-6"
     />
   );
 }

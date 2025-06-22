@@ -1,17 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from "react-router-dom"; // pastikan sudah di-import
 
 const ScrollDownButton = () => {
   return (
     <StyledWrapper>
-      <a
-        href="https://rayhanportfolio.super.site"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-block px-6 py-3 rounded-full bg-yellow-400 text-black font-semibold shadow-md hover:bg-yellow-500 hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+      <Link
+        to="/projects" // ✅ Gunakan `to` pada Link, bukan <a>
+        className="button"
       >
-        See Projects
-      </a>
+        <svg viewBox="0 0 384 512" className="svgIcon">
+          <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z" />
+        </svg>
+      </Link>
     </StyledWrapper>
   );
 }

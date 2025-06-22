@@ -24,8 +24,8 @@ const AnimatedBackground = () => {
   return (
     <video
       ref={videoRef}
-      className="fixed top-0 left-0 w-[100vw] h-[100vh] object-cover -z-10"
-      src="./videos/3.mp4"
+      className="fixed top-0 left-0 w-[100vw] h-[100vh] object-cover -z-10 opacity-25"
+      src={`${import.meta.env.BASE_URL}videos/3.mp4`}
       autoPlay
       muted
       loop

@@ -2,9 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
 
-const NavbarButton = () => {
+const NavbarButton = (props) => {
   return (
-    <StyledWrapper>
+    <StyledWrapper $theme={props.$theme}>
       <a
         href="https://github.com/rayhanzz772"
         target="_blank"
@@ -33,6 +33,7 @@ const NavbarButton = () => {
         <FaInstagram />
       </a>
     </StyledWrapper>
+    
   );
 };
 
@@ -41,7 +42,7 @@ const StyledWrapper = styled.div`
   gap: 20px;
 
   .icon-button {
-    color: white;
+    color: ${(props) => (props.$theme === "dark" ? "white" : "black")};
     font-size: 32px;
     transition: transform 0.3s ease;
   }
