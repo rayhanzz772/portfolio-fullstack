@@ -2,17 +2,17 @@ import React, { useState, useEffect } from 'react';
 
 // Daftar ucapan selamat datang dari berbagai bahasa
 const GREETINGS = [
-  'Halo',
-  'Hello',
-  'Bonjour',
-  'Hola',
-  'Ciao',
-  'こんにちは',
-  '안녕하세요',
-  '你好',
-  'Olá',
-  'Guten Tag',
-  'Привет'
+  'Halo!',
+  'Hello!',
+  'Bonjour!',
+  'Hola!',
+  'Ciao!',
+  'こんにちは!',
+  '안녕하세요!',
+  '你好!',
+  'Olá!',
+  'Guten Tag!',
+  'Привет!'
 ];
 
 // Durasi total loading screen dalam milidetik (misal: 3 detik)
@@ -82,7 +82,7 @@ export default function LoadingScreen({ isExiting }) {
     <>
       <style>{styles}</style>
       {/* Menambahkan kelas animasi fadeOut secara kondisional */}
-      <div className={`fixed inset-0 z-50 flex flex-col items-center justify-center bg-black text-white font-sans ${isExiting ? 'animate-fadeOut' : ''}`}>
+      <div className={`fixed inset-0 z-50 flex flex-col items-center justify-center bg-black text-white font-mori ${isExiting ? 'animate-fadeOut' : ''}`}>
         <div className="text-center h-16">
           <h1 key={currentGreetingIndex} className="text-4xl md:text-5xl font animate-fadeInOut">
             {GREETINGS[currentGreetingIndex]}

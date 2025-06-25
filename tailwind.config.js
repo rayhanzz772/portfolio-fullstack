@@ -7,7 +7,10 @@ export default {
   theme: {
     extend: {
         fontFamily: {
-        poppins: ['Mori', 'sans-serif'],
+        mori: ['Mori', 'sans-serif'],
+        grotesk: ['Overused Grotesk', 'sans-serif'],
+        ppvalve: ['PP Valve', 'sans-serif'],
+        helvetica: ['"Helvetica Neue"', 'sans-serif'],
         },
     },
   },

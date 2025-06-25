@@ -45,3 +45,16 @@
 .read-the-docs {
   color: #888;
 }
+
+@keyframes waveSlide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-wave {
+  animation: waveSlide 12s linear infinite;
+}

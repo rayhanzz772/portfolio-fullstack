@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from "react-router-dom"; // pastikan sudah di-import
 
-const ScrollDownButton = () => {
+const ButtonProjects = () => {
   return (
     <StyledWrapper>
       <Link
@@ -24,7 +24,7 @@ const StyledWrapper = styled.div`
     border-radius: 50%;
     background-color: rgb(20, 20, 20);
     border: none;
-    font-weight: 600;
+    font-weight: 400;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,4 +76,4 @@ const StyledWrapper = styled.div`
     transition-duration: 0.3s;
   }`;
 
-export default ScrollDownButton;
+export default ButtonProjects;

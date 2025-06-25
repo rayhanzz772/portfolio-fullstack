@@ -6,7 +6,7 @@ import { useInView } from 'react-intersection-observer';
 const TextReveal = ({ children, className }) => {
   const controls = useAnimation();
   const { ref, inView } = useInView({
-    threshold: 0.5,
+    threshold: 0.2,
   });
 
   useEffect(() => {

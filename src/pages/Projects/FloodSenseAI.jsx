@@ -5,6 +5,20 @@ import AnimatedSeparator from "../../components/AnimatedSeparator";
 import { Link } from "react-router-dom"; // pastikan sudah di-import
 import CustomAnimatedSeparator from "../../components/CustomAnimatedSeparator";
 
+const fadeInUp = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+};
+
+const staggerContainer = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.15,
+    },
+  },
+};  
+
 const FloodSenseAI = () => {
   const containerRef = useRef(null);
 
@@ -13,52 +27,115 @@ const FloodSenseAI = () => {
     <motion.section
       ref={containerRef}
       style={{ fontFamily: "Mori, sans-serif" }}
-      className="relative z-10 bg-[#fffbee] text-black flex items-start justify-end"
+      className="relative z-10 bg-[#ffffff] text-black flex items-start justify-end"
+      initial="hidden"
+      animate="visible"
+      variants={staggerContainer}
     >
-        <div className="fixed left-4 top-1/2 -translate-y-1/2 z-50">
+
+        {/* Background Gradient */}
+
+        <div className="absolute inset-0 -z-10 pointer-events-none">
+           <div className="absolute inset-0 bg-[linear-gradient(to_bottom_right,_#fcd7f733,_#e2f0ff33,_#cfcaff33)] rounded-full blur-2xl" />
+        </div>
+
+        {/* Tombol Back */}
+        
+        <div className="fixed left-5 md:ml-10 top-4 md:top-1/2 md:-translate-y-1/2 z-50">
             <Link
-            to="/projects"
-            className="bg-black text-white px-6 py-6 rounded-full shadow-md hover:bg-gray-800 transition"
+                to="/projects"
+                className="bg-black text-white w-14 h-14 flex items-center justify-center rounded-full shadow-md hover:bg-gray-800 transition text-xl"
+                aria-label="Back"
             >
-            ←
+                ←
             </Link>
         </div>
-        
 
-        <article className="w-[98vw] min-h-screen max-w-screen-xl mx-auto py-20 justify-center items-center flex flex-col">
-            <div className="w-9/12 text-left">
-                <h1 className="text-2xl md:text-4xl font-semibold mb-2">
-                FloodSenseAI
-                </h1>
-            </div>
-            <div className="w-9/12">
+        {/* Tombol kanan Github */}
+        <div className="fixed md:mr-10 right-4 top-4 md:top-1/2 md:-translate-y-1/2 z-50">
+            <a
+                href="https://github.com/username/repository" // ganti dengan link GitHub kamu
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-black text-white w-14 h-14 rounded-full shadow-md hover:bg-gray-800 transition flex items-center justify-center"
+                aria-label="GitHub Repository"
+            >
+                {/* Ikon GitHub */}
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="w-6 h-6 md:w-7 md:h-7"
+                >
+                <path
+                    fillRule="evenodd"
+                    d="M12 0C5.37 0 0 5.373 0 12a12 12 0 008.205 11.385c.6.113.82-.26.82-.577v-2.036c-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.09-.745.082-.729.082-.729 1.205.086 1.838 1.24 1.838 1.24 1.07 1.833 2.806 1.304 3.492.997.107-.776.418-1.305.76-1.604-2.665-.304-5.466-1.334-5.466-5.933 0-1.31.468-2.38 1.236-3.22-.123-.303-.536-1.524.117-3.176 0 0 1.008-.322 3.3 1.23a11.518 11.518 0 016 0c2.29-1.552 3.297-1.23 3.297-1.23.655 1.652.242 2.873.12 3.176.77.84 1.235 1.91 1.235 3.22 0 4.61-2.804 5.625-5.475 5.921.43.372.814 1.103.814 2.222v3.293c0 .319.218.694.825.576A12.003 12.003 0 0024 12c0-6.627-5.373-12-12-12z"
+                    clipRule="evenodd"
+                />
+                </svg>
+            </a>
+        </div>
+
+
+
+        {/* Parent */}
+        <motion.article
+            className="w-[98vw] min-h-screen max-w-screen-xl mx-auto py-20 flex flex-col items-center"
+            variants={staggerContainer}
+        >
+
+            {/* Judul */}
+            <motion.div variants={fadeInUp} className="w-11/12 md:w-9/12 text-left">
+                <h1 className="text-4xl font-semibold">FloodSenseAI</h1>
+            </motion.div>
+
+            <div className="w-11/12 md:w-9/12">
                 <CustomAnimatedSeparator mb={8} h={1} mx={0} />
             </div>
 
-            <div className="grid gap-6 w-9/12 grid-cols-6 font-bold text-2xl">
-                <div className="rounded-lg col-span-2 flex-col">
+            {/* Info */}
+
+            <motion.div
+            variants={fadeInUp}
+            className="grid gap-6 w-11/12 md:w-9/12 grid-cols-1 md:grid-cols-6 text-lg"
+            >
+                {/* Kiri: Detail Info */}
+                <div className="md:col-span-2 flex flex-col gap-2">
                     <div className="flex items-center">
-                        <span className="bg-black px-6 py-1 rounded-full text-white text-xl mr-6 mb-2">Date</span>
-                        <p className="text-xl">2025</p>
+                    <span className="bg-black  px-4 py-1 rounded-full text-white text-l md:text-xl mr-4 md:mr-6 mb-2">Date</span>
+                    <p className="text-l font-semibold md:text-xl">2025</p>
                     </div>
                     <div className="flex items-center">
-                        <span className="bg-black px-6 py-1 rounded-full text-white text-xl mr-6 mb-2">Role</span>
-                        <p className="text-xl">Android Developer</p>
+                    <span className="bg-black  px-4 py-1 rounded-full text-white text-l md:text-xl mr-4 md:mr-6 mb-2">Role</span>
+                    <p className="text-l font-semibold md:text-xl">Android Developer</p>
                     </div>
                     <div className="flex items-center">
-                        <span className="bg-black px-6 py-1 rounded-full text-white text-xl mr-6">Tech</span>
-                        <p className="text-xl">Flutter</p>
+                    <span className="bg-black  px-4 py-1 rounded-full text-white text-l md:text-xl mr-4 md:mr-6">Tech</span>
+                    <p className="text-l font-semibold md:text-xl">Flutter</p>
                     </div>
                 </div>
-                <div className="rounded-lg col-span-4 text-xl font-thin">
-                    <p>A unifying centralized / decentralized cryptocurrency exchange and social payment platform. Company goals include bringing crypto transactions to a more general user base and being a leader in encouraging integration.</p>
+
+                {/* Kanan: Deskripsi */}
+                <div className="md:col-span-4 text-sm md:text-xl font-normal md:font-thin">
+                    <p>
+                    AI/IoT flood monitoring system using Flutter with API caching,
+                    delivering real-time alerts via cross-platform app adopted by 3+ districts in Central Java.
+                    Designed an interactive dashboard to visualize real-time flood data for users and authorities,
+                    enhancing situational awareness and response coordination.
+
+                    </p>
                 </div>
-            </div>
-             <div className="w-9/12">
+            </motion.div>
+
+
+             <div className="w-11/12 md:w-9/12">
                 <CustomAnimatedSeparator my={8} h={1} mx={0} />
             </div>
-            <div className="w-9/12 flex-col">
-                <div className="w-9/12 items-start flex gap-3">
+
+            {/* Info 2 (gambar) */}
+
+            <motion.div variants={fadeInUp} className="w-11/12 md:w-9/12 text-left space-y-10">
+                <div className="w-11/12 md:w-9/12 items-start flex gap-3">
                     <svg
                         viewBox="0 0 32 32"
                         xmlns="http://www.w3.org/2000/svg"
@@ -72,11 +149,11 @@ const FloodSenseAI = () => {
                     <h1 className="text-2xl font-semibold">Design Preview</h1>
                 </div>
 
-                <div className="py-8 flex justify-center items-center">
+                <div className="flex justify-center items-center">
                     <img src="/photos/preview_floodsenseai.png" className="md:w-4/6" alt="floodsenseai" />
                 </div>
 
-                <div className="w-9/12 items-start flex gap-3">
+                <div className="w-11/12 md:w-9/12 items-start flex gap-3">
                     <svg
                         viewBox="0 0 32 32"
                         xmlns="http://www.w3.org/2000/svg"
@@ -89,16 +166,14 @@ const FloodSenseAI = () => {
                     </svg>
                     <h1 className="text-2xl font-semibold">Work Preview</h1>
                 </div>
-                <div className="py-8 flex justify-center items-center gap-8 flex-col">
+                <div className="flex justify-center items-center gap-8 flex-col">
                     <img src="/photos/floodsenseai/1.jpeg" className="rounded-2xl shadow-2xl" alt="floodsenseai" />
                     <img src="/photos/floodsenseai/3.jpeg" className="rounded-2xl shadow-2xl" alt="floodsenseai" />
                     <img src="/photos/floodsenseai/2.jpeg" className="rounded-2xl shadow-2xl" alt="floodsenseai" />
                 </div>
-            </div>
+            </motion.div>
             
-
-
-        </article>
+        </motion.article>
     </motion.section>
     </>
   );

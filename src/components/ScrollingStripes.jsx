@@ -19,7 +19,7 @@ const ScrollingStripes = () => {
   return (
     <div
       ref={ref}
-      className="md:w-1/6 w-2/6 h-10 bg-repeat bg-[url('/photos/stripes2.svg')]"
+      className="md:w-1/6 w-2/6 h-10 bg-repeat bg-[url('/photos/stripeswhite.svg')]"
       style={{
         backgroundSize: "auto 100%",
         backgroundPositionX: "0px",

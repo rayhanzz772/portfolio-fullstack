@@ -33,11 +33,10 @@ export default function CustomAnimatedSeparator({
 
   return (
     <motion.div
-      ref={ref}
       initial={{ width: 0, opacity: 0 }}
-      animate={controls}
+      animate={{ width: "100%", opacity: 1 }}
       transition={{ duration: 1.2, ease: "easeOut" }}
-      className={`bg-black rounded-full ${heightClass} ${myClass} ${mbClass} ${mxClass} ${className}`}
+      className="bg-black h-1 w-full my-8 rounded-full"
     />
   );
 }
