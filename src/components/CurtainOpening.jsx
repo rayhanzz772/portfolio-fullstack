@@ -1,28 +1,38 @@
 import React, { useEffect, useState } from 'react';
-import './CurtainOpening.css'; // CSS-nya dipisah agar rapi
+import './CurtainOpening.css';
 
 const CurtainOpening = ({ onFinish }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [openColumns, setOpenColumns] = useState([false, false, false, false]);
 
   useEffect(() => {
-    const openTimeout = setTimeout(() => {
-      setIsOpen(true);
-    }, 500); // jeda sebelum membuka tirai
+    // Staggered opening dengan interval
+    openColumns.forEach((_, index) => {
+      setTimeout(() => {
+        setOpenColumns(prev => {
+          const updated = [...prev];
+          updated[index] = true;
+          return updated;
+        });
+      }, 300 * index); // delay antar kolom
+    });
 
+    // Trigger callback setelah semua tirai terbuka
+    const totalDuration = 300 * openColumns.length + 1000;
     const finishTimeout = setTimeout(() => {
-      onFinish(); // notifikasi ke parent bahwa animasi selesai
-    }, 3000); // total waktu animasi
+      onFinish();
+    }, totalDuration);
 
-    return () => {
-      clearTimeout(openTimeout);
-      clearTimeout(finishTimeout);
-    };
+    return () => clearTimeout(finishTimeout);
   }, [onFinish]);
 
   return (
     <div className="curtain-wrapper">
-      <div className={`curtain left ${isOpen ? 'open' : ''}`} />
-      <div className={`curtain right ${isOpen ? 'open' : ''}`} />
+      {[0, 1, 2, 3].map((i) => (
+        <div
+          key={i}
+          className={`curtain column-${i + 1} ${openColumns[i] ? 'open' : ''}`}
+        />
+      ))}
     </div>
   );
 };

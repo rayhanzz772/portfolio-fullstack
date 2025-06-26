@@ -53,7 +53,7 @@ function Hero() {
         {/* Section dengan efek parallax */}
         <motion.div
           style={{ y: yParallax }}
-          className="z-0 flex flex-col justify-start py-2 md:py-10 md:pt-15 md:px-5 w-full"
+          className="z-0 flex flex-col justify-start py-2 md:py-10 md:pt-15 md:px-6 w-full"
         >
           <div className="flex flex-col justify-start items-start gap-2 lg:px-5 px-5">
             {inView && (
@@ -78,7 +78,7 @@ function Hero() {
                 <Link to="/projects">
                   <div className="mt-2 inline-block text-lg font-medium relative group">
                     <span className="text-black transition-transform duration-300 ease-in-out group-hover:translate-x-1">
-                      See Project →
+                      See Projects →
                     </span>
                     <span className="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-black transition-all duration-300 ease-in-out group-hover:w-full"></span>
                   </div>

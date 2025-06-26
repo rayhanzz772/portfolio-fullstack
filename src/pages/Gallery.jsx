@@ -24,14 +24,15 @@ const Gallery = () => {
     
     <motion.section
       ref={containerRef}
-      className="relative z-10 flex items-start justify-start"
+      className="relative z-10 flex items-center justify-center"
       style={{
         backgroundColor,
         color: textColor,
         transition: "background-color 0.5s ease, color 0.5s ease",
       }}
     >
-      <article className="w-[100vw] min-h-screen sm:px-6 md:px-10 lg:px-24 p-4 mx-auto flex-col justify-start">
+      <article className="w-full sm:px-6 md:px-10 lg:px-24 px-4 mx-auto">
+        <div className="min-h-screen flex flex-col justify-center">
 
           <div>
             <TextReveal className="text-xl md:text-2xl text-left mt-20 mb-2">
@@ -110,7 +111,8 @@ const Gallery = () => {
             </div>
           </div>
 
-          <RunningLogos/>        
+          <RunningLogos/>  
+        </div>      
       </article>
     </motion.section>
     </>

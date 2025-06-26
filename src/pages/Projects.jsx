@@ -2,6 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Header from "./Header";
 import CustomCursor from '../components/CustomCursor';
+import CurtainOpening from '../components/CurtainOpening';
 import CustomAnimatedSeparator from "../components/CustomAnimatedSeparator";
 import { Link } from "react-router-dom";
 import useClickAway from "react-use/lib/useClickAway"; // optional, auto-close
@@ -130,7 +131,7 @@ const Projects = () => {
 
   return (
     <>
-      {/* {!isCurtainDone && <CurtainOpening onFinish={() => setIsCurtainDone(true)} />} */}
+      {!isCurtainDone && <CurtainOpening onFinish={() => setIsCurtainDone(true)} />}
       <CustomCursor />
 
       <motion.section

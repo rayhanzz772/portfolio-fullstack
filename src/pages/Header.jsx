@@ -32,7 +32,7 @@ return (
       isVisible ? "translate-y-10" : "-translate-y-full"
     }`}
   >
-    <div className="px-4 sm:px-6 md:px-14 mx-auto py-2">
+    <div className="px-6 sm:px-6 md:px-16 mx-auto py-2">
       <div className="flex items-center justify-between">
         <div>
           <Link to="/portfolio">
