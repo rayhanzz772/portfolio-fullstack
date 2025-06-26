@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Header from './Header';
+import About from './About';
 import Hero from './Hero';
 import Gallery from './Gallery';
 import { motion } from 'framer-motion';
@@ -47,6 +47,7 @@ export default function MainPage() {
       <div className="relative bg-black overflow-x-hidden">
         <Hero />
         <Gallery />
+        <About />
       </div>
     </>
   );

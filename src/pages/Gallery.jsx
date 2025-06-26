@@ -32,11 +32,14 @@ const Gallery = () => {
       }}
     >
       <article className="w-[100vw] min-h-screen md:px-24 p-4 mx-auto flex-col justify-start">
-          <TextReveal className="text-4xl md:text-2xl text-left mt-20 mb-2">
-            <h1 className="font-ppvalve font-light whitespace-nowrap">
-             X - Welcome to my portfolio.
-            </h1>
-          </TextReveal> 
+
+          <div>
+            <TextReveal className="text-4xl md:text-2xl text-left mt-20 mb-2">
+              <h1 className="font-ppvalve font-light whitespace-nowrap">
+              X - Welcome to my portfolio.
+              </h1>
+            </TextReveal> 
+          </div>
 
           <div className="flex w-full h-full pt-5 justify-around">
             <div className="bg-orange-600 w-8 h-4 mr-9 mt-2 rounded-full"></div>
@@ -95,8 +98,7 @@ const Gallery = () => {
             </div>
           </div>
 
-          <RunningLogos/>
-        
+          <RunningLogos/>        
       </article>
     </motion.section>
     </>

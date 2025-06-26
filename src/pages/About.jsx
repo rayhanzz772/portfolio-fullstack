@@ -12,80 +12,42 @@ const About = () => {
   }, []);
 
   return (
-<motion.section
-  ref={containerRef}
-  // initial={{ backgroundColor: "#ffffff", color: "#000000" }}
-  // whileInView={{ backgroundColor: "#0e0e0e", color: "#ffffff" }}
-  transition={{ duration: 0.8, ease: "easeInOut" }}
-  viewport={{ once: false, amount: 0.5 }} // <= ini biar bisa terus menerus
-  className="relative z-10 min-h-screen bg-[#0e0e0e]"
->
+    <motion.section
+      ref={containerRef}
+      transition={{ duration: 0.8, ease: "easeInOut" }}
+      viewport={{ once: false, amount: 0.5 }}
+      className="relative z-10 min-h-screen bg-[#fffbee] text-black transition-colors duration-500"
+    >
+    <div
+      className="w-full h-16"
+      style={{
+        background: "linear-gradient(to top, #fffbee 0%, #d6d3cb 30%, #7e7e7e 60%, #0e0e0e 100%)",
+      }}
+    />
+
       <article className="w-full snap">
         <LayoutGroup>
           <div className="min-h-screen w-full mx-auto px-4 md:px-32 flex items-center justify-center py-20">
-            <div className="w-full rounded-[32px] border border-[#d1d1d1] overflow-hidden shadow-md">
-              <main
-                className="flex flex-col justify-center items-center py-6 md:py-10 w-full h-full"
-                style={{ fontFamily: 'Mori, Arial, sans-serif' }}
-              >
-                <div className="max-w-7xl w-full mx-auto grid divide-y px-4 md:px-12 gap-y-10">
-                  
-                  {/* Row 1 */}
-                  <div className="grid grid-cols-1 md:grid-cols-[4fr_1fr] gap-8 items-center pt-4 md:pt-8">
-                    <div className="text-left">
-                      <div className="text-2xl font-thin mb-4 md:text-5xl leading-snug">
-                        <TextReveal>
-                          <span className="text-4xl text-white md:text-5xl">
-                            Hello!{" "}
-                            <span className="inline-block px-1 text-white rounded">
-                              I’m Rayhan
-                            </span>
-                          </span>
-                          <span className="sr-only md:not-sr-only">, </span>
-                          <span className="text-white">
-                            student at Politeknik Negeri Semarang with 1+ years of
-                            experience in developing scalable web and mobile apps.
-                          </span>
-                        </TextReveal>
-                      </div>
-                    </div>
-                    <div className="flex justify-center md:justify-end" />
-                  </div>
+            <main
+              className="flex flex-col justify-center items-center py-6 md:py-10 w-full h-full"
+              style={{ fontFamily: 'Mori, Arial, sans-serif' }}
+            >
+              <div className="max-w-7xl w-full mx-auto px-4 md:px-12 gap-y-10 flex flex-col">
+                <h1 className="text-xl font-semibold">X - About Me</h1>
 
-                  {/* Row 2 */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-4 md:py-10">
-                    <div className="text-left">
-                      <TextReveal className="text-4xl font-bold text-white mb-4 md:text-5xl">
-                        <span className="inline bg-yellow-400 text-black font-extralight px-1 rounded-sm">
-                          About
-                        </span>{" "}
-                        me.
-                      </TextReveal>
+                <h1 className="text-5xl md:text-7xl font-medium duration-500">
+                  Experience in developing scalable web and mobile apps that drive innovation and deliver impactful user experiences.
+                </h1>
 
-                      <TextReveal className="text-lg md:text-xl font-thin mb-4 text-[#9c9c9c]">
-                        With a strong background in design and development, I
-                        collaborate remotely with cross-functional teams to craft
-                        compelling experiences that drive meaningful engagement.
-                        Want to know more about me? click the link below
-                      </TextReveal>
-                    </div>
-
-                    <motion.div
-                      initial={{ opacity: 0, x: 40 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      transition={{ duration: 0.6 }}
-                      className="flex justify-center md:justify-end"
-                    >
-                      <img
-                        className="w-2/3 md:w-1/2 lg:w-1/3 rounded-lg shadow-lg"
-                        src="./photos/saya.jpeg"
-                        alt="About me again"
-                      />
-                    </motion.div>
-                  </div>
-                </div>
-              </main>
-            </div>
+                <h1 className="text-base md:text-xl duration-500 leading-relaxed">
+                  With over 20 years of experience in product management and design, I specialise in transforming complex challenges 
+                  into forward-thinking solutions by blending user-focused design with strategic business development. My expertise spans 
+                  UX design thinking, comprehensive user and market research, usability testing, rapid prototyping, high-fidelity wireframing, 
+                  and evidence-based validation across the entire product lifecycle. I’ve successfully led products from inception to market, 
+                  empowering cross-functional teams to drive growth and revenue through a start-up-inspired, entrepreneurial mindset.
+                </h1>
+              </div>
+            </main>
           </div>
         </LayoutGroup>
       </article>

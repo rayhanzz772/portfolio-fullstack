@@ -53,15 +53,15 @@ function Hero() {
         {/* Section dengan efek parallax */}
         <motion.div
           style={{ y: yParallax }}
-          className="z-0 flex flex-col justify-start py-10 md:pt-15 md:px-10 w-full"
+          className="z-0 flex flex-col justify-start py-10 md:pt-15 md:px-5 w-full"
         >
-          <div className="flex flex-col justify-start items-start gap-2 lg:pl-0">
+          <div className="flex flex-col justify-start items-start gap-2 lg:px-5 px-5">
             {inView && (
               <>
-                <h1 className="pb-0 font-medium text-black text-[3rem] xs:text-[1.5rem] md:text-[5rem] lg:text-[7rem] leading-[0.99] md:leading-[0.95] max-w-[350px] md:max-w-[1300px]">
-                  Hello, I'm Rayhan a
+                <h1 className="pb-0 font-medium text-black text-[2rem] sm:text-[3.5rem] md:text-[4rem] lg:text-[5rem] xl:text-[6.5rem] leading-[0.99] md:leading-[0.95] max-w-[750px] md:max-w-[1300px]">
+                  Hello, I'm Rayhan, a
                 </h1>
-                <h1 className="pb-0 font-medium text-black text-[3rem] xs:text-[1.5rem] md:text-[5rem] lg:text-[7rem] leading-[0.99] md:leading-[0.95] max-w-[350px] md:max-w-[1300px]">
+                <h1 className="pb-0 font-medium text-black text-[3.5rem] sm:text-[3.5rem] md:text-[4rem] lg:text-[5rem] xl:text-[6.5rem] leading-[0.99] md:leading-[0.95] max-w-[750px] md:max-w-[1300px]">
                   Software Developer.
                 </h1>
                 
@@ -78,15 +78,15 @@ function Hero() {
           </div>
         </motion.div>
 
-        {/* Section Contact fix di bawah */}
-        <div className="grid grid-cols-2 gap-6 mt-auto w-full pl-10 pb-16">
+       {/* Section Contact fix di bawah */}
+        <div className="grid grid-cols-1 md:grid-cols-1 gap-6 md:gap-6 mt-auto w-full md:px-10 px-5 pb-16">
           {/* Kolom kiri tetap */}
-          <h1 className="text-black font-medium text-lg md:text-2xl col-span-1">
+          <h1 className="text-black font-medium text-lg md:text-2xl">
             More Information:
           </h1>
 
-          {/* Kolom kanan (dibungkus dan digeser ke kanan) */}
-          <div className="col-span-4 flex justify-between w-full pr-10 ml-auto">
+          {/* Kolom kanan (tumpuk di mobile, sejajar di desktop) */}
+          <div className="flex flex-col md:flex-row md:justify-between gap-4 md:gap-6 w-full">
             <div>
               <p className="text-gray-800 font-semibold">Availability:</p>
               <p>Every Time</p>
@@ -108,7 +108,6 @@ function Hero() {
             </div>
           </div>
         </div>
-
       </main>
 
     </motion.div>
