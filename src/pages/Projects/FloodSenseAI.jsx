@@ -149,7 +149,7 @@ const FloodSenseAI = () => {
                 </div>
 
                 <div className="flex justify-center items-center">
-                    <img src="/photos/preview_floodsenseai.png" className="md:w-4/6" alt="floodsenseai" />
+                    <img src="/portfolio/photos/preview_floodsenseai.png" className="md:w-4/6" alt="floodsenseai" />
                 </div>
 
                 <div className="w-11/12 md:w-9/12 items-start flex gap-3">
@@ -166,9 +166,9 @@ const FloodSenseAI = () => {
                     <h1 className="text-2xl font-semibold">Work Preview</h1>
                 </div>
                 <div className="flex justify-center items-center gap-8 flex-col">
-                    <img src="/photos/floodsenseai/1.jpeg" className="rounded-2xl shadow-2xl" alt="floodsenseai" />
-                    <img src="/photos/floodsenseai/3.jpeg" className="rounded-2xl shadow-2xl" alt="floodsenseai" />
-                    <img src="/photos/floodsenseai/2.jpeg" className="rounded-2xl shadow-2xl" alt="floodsenseai" />
+                    <img src="/portfolio/photos/floodsenseai/1.jpeg" className="rounded-2xl shadow-2xl" alt="floodsenseai" />
+                    <img src="/portfolio/photos/floodsenseai/3.jpeg" className="rounded-2xl shadow-2xl" alt="floodsenseai" />
+                    <img src="/portfolio/photos/floodsenseai/2.jpeg" className="rounded-2xl shadow-2xl" alt="floodsenseai" />
                 </div>
             </motion.div>
             

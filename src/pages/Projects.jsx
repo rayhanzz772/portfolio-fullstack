@@ -5,8 +5,7 @@ import CustomCursor from '../components/CustomCursor';
 import CustomAnimatedSeparator from "../components/CustomAnimatedSeparator";
 import { Link } from "react-router-dom";
 import useClickAway from "react-use/lib/useClickAway"; // optional, auto-close
-import CurtainOpening from '../components/CurtainOpening'; // NEW
-import AnimateGradient from "../components/AnimateGradient";
+
 
 const ITEMS_PER_PAGE = 4;
 const projects = [
@@ -14,43 +13,43 @@ const projects = [
     name: "FloodSenseAI",
     type: "Android Dev",
     previewText: "AI-powered flood detection system.",
-    logo: "/photos/floodsenseai.png",
+    logo: "/portfolio/photos/floodsenseai.png",
   },
   {
     name: "Bumdesma",
     type: "Fullstack Dev",
     previewText: "Village enterprise management site.",
-    logo: "/photos/bumdesma.png",
+    logo: "/portfolio/photos/bumdesma.png",
   },
   {
     name: "SIGASI",
     type: "FrontEnd Dev",
     previewText: "App for managing tasks & team.",
-    logo: "/photos/SIGASI.png",
+    logo: "/portfolio/photos/SIGASI.png",
   },
   {
     name: "Mental Care App",
     type: "UI/UX Design",
     previewText: "Mental health support platform.",
-    logo: "/photos/WECARE.png",
+    logo: "/portfolio/photos/WECARE.png",
   },
   {
     name: "SITARI",
     type: "Backend Dev",
     previewText: "App for managing tasks & team.",
-    logo: "/photos/SIGASI.png",
+    logo: "/portfolio/photos/SIGASI.png",
   },
   {
     name: "SoilAI",
     type: "Backend Dev",
     previewText: "App for managing tasks & team.",
-    logo: "/photos/SIGASI.png",
+    logo: "/portfolio/photos/SIGASI.png",
   },
   {
     name: "PMI Pusdiklat Jateng App",
     type: "Android Dev",
     previewText: "App for managing tasks & team.",
-    logo: "/photos/SIGASI.png",
+    logo: "/portfolio/photos/SIGASI.png",
   },
 ];
 
@@ -59,25 +58,25 @@ const certifications = [
     name: "Dicoding Machine Learning",
     type: "Dicoding",
     previewText: "Certified by BNSP, focused on ML fundamentals.",
-    logo: "/photos/cert_ml.png",
+    logo: "/portfolio/photos/cert_ml.png",
   },
   {
     name: "Machine Learning Android",
     type: "Dicoding",
     previewText: "Certified by BNSP, focused on ML fundamentals.",
-    logo: "/photos/cert_ml.png",
+    logo: "/portfolio/photos/cert_ml.png",
   },
   {
     name: "Junior Web Developer",
     type: "BNSP",
     previewText: "AWS foundational cloud certification.",
-    logo: "/photos/cert_aws.png",
+    logo: "/portfolio/photos/cert_aws.png",
   },
   {
     name: "SQL Certified",
     type: "Oracle",
     previewText: "AWS foundational cloud certification.",
-    logo: "/photos/cert_aws.png",
+    logo: "portfolio/photos/cert_aws.png",
   },
 ];
 

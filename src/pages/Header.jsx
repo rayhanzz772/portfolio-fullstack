@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import NavbarButton from '../components/NavbarButton'; // section baru
 import { Link } from 'react-router-dom';
-
+import logo from '/logo.png';
 
 function Header({ theme = "dark" }) {
   const [isVisible, setIsVisible] = useState(true);
@@ -37,7 +37,7 @@ return (
         <div>
           <Link to="/portfolio">
             <img
-              src={`${import.meta.env.BASE_URL}logo.png`}
+              src={logo}
               alt="logo"
               className="h-7"
             />

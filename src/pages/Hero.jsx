@@ -53,15 +53,25 @@ function Hero() {
         {/* Section dengan efek parallax */}
         <motion.div
           style={{ y: yParallax }}
-          className="z-0 flex flex-col justify-start py-10 md:pt-15 md:px-5 w-full"
+          className="z-0 flex flex-col justify-start py-2 md:py-10 md:pt-15 md:px-5 w-full"
         >
           <div className="flex flex-col justify-start items-start gap-2 lg:px-5 px-5">
             {inView && (
               <>
-                <h1 className="pb-0 font-medium text-black text-[2rem] sm:text-[3.5rem] md:text-[4rem] lg:text-[5rem] xl:text-[6.5rem] leading-[0.99] md:leading-[0.95] max-w-[750px] md:max-w-[1300px]">
+                <h1 className="pb-0 font-medium text-black 
+                text-[2rem] 
+                sm:text-[3.5rem] 
+                md:text-[4rem] 
+                lg:text-[5rem] 
+                xl:text-[6.5rem] leading-[0.99] md:leading-[0.95] max-w-[750px] md:max-w-[1300px]">
                   Hello, I'm Rayhan, a
                 </h1>
-                <h1 className="pb-0 font-medium text-black text-[3.5rem] sm:text-[3.5rem] md:text-[4rem] lg:text-[5rem] xl:text-[6.5rem] leading-[0.99] md:leading-[0.95] max-w-[750px] md:max-w-[1300px]">
+                <h1 className="pb-0 font-medium text-black 
+                 text-[3.5rem] 
+                 sm:text-[3.5rem] 
+                 md:text-[4rem] 
+                 lg:text-[5rem] 
+                 xl:text-[6.5rem] leading-[0.99] md:leading-[0.95] max-w-[750px] md:max-w-[1300px]">
                   Software Developer.
                 </h1>
                 
@@ -79,7 +89,7 @@ function Hero() {
         </motion.div>
 
        {/* Section Contact fix di bawah */}
-        <div className="grid grid-cols-1 md:grid-cols-1 gap-6 md:gap-6 mt-auto w-full md:px-10 px-5 pb-16">
+        <div className="grid grid-cols-1 md:grid-cols-1 gap-6 md:gap-6 mt-auto w-full md:px-10 px-5 pb-24 lg:pb-16">
           {/* Kolom kiri tetap */}
           <h1 className="text-black font-medium text-lg md:text-2xl">
             More Information:
@@ -88,8 +98,8 @@ function Hero() {
           {/* Kolom kanan (tumpuk di mobile, sejajar di desktop) */}
           <div className="flex flex-col md:flex-row md:justify-between gap-4 md:gap-6 w-full">
             <div>
-              <p className="text-gray-800 font-semibold">Availability:</p>
-              <p>Every Time</p>
+              <p className="text-gray-800 font-semibold">Phone:</p>
+              <p>+62 89652616158</p>
             </div>
 
             <div>
@@ -99,12 +109,12 @@ function Hero() {
 
             <div>
               <p className="text-gray-800 font-semibold">Current location:</p>
-              <p>Banyumanik, Semarang</p>
+              <p>Semarang, Indonesia</p>
             </div>
 
             <div>
-              <p className="text-gray-800 font-semibold">Copyright:</p>
-              <p>©2025 Rayhan Maulana</p>
+              <p className="text-gray-800 font-semibold">Availability:</p>
+              <p>Anytime</p>
             </div>
           </div>
         </div>

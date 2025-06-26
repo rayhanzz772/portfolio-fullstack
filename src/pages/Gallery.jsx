@@ -31,10 +31,10 @@ const Gallery = () => {
         transition: "background-color 0.5s ease, color 0.5s ease",
       }}
     >
-      <article className="w-[100vw] min-h-screen md:px-24 p-4 mx-auto flex-col justify-start">
+      <article className="w-[100vw] min-h-screen sm:px-6 md:px-10 lg:px-24 p-4 mx-auto flex-col justify-start">
 
           <div>
-            <TextReveal className="text-4xl md:text-2xl text-left mt-20 mb-2">
+            <TextReveal className="text-xl md:text-2xl text-left mt-20 mb-2">
               <h1 className="font-ppvalve font-light whitespace-nowrap">
               X - Welcome to my portfolio.
               </h1>
@@ -42,9 +42,8 @@ const Gallery = () => {
           </div>
 
           <div className="flex w-full h-full pt-5 justify-around">
-            <div className="bg-orange-600 w-8 h-4 mr-9 mt-2 rounded-full"></div>
-
-            <TextReveal className="text-4xl md:text-8xl text-left mb-10">
+            <div className="bg-orange-600 w-8 h-4 mr-6 lg:mr-9 mt-2 rounded-full"></div>
+            <TextReveal className="text-2xl md:text-4xl xl:text-8xl text-left lg:mb-10">
               <h1 className="font-mori">Turn <span className="animated-text">complexity</span> into clarity through thoughtful software engineering.</h1>
             </TextReveal>
           </div>
@@ -52,14 +51,16 @@ const Gallery = () => {
           <div className="my-10">
             {/* Website Dev */}
             <div className="group font-mori flex w-full h-full pt-5 justify-start gap-8 transition-colors duration-300">
-              <div className="w-2/6 text-4xl">
-                <h1 className="text-gray-400 group-hover:text-white transition-colors duration-300">
-                Website Dev
-                </h1>
+              <div className="w-2/6 text-2xl md:text-3xl lg:text-4xl">
+                <TextReveal>
+                  <h1 className="text-gray-400 group-hover:text-white transition-colors duration-300">
+                  Website Dev
+                  </h1>
+                </TextReveal>
               </div>
 
               <div className="w-4/6">
-                <TextReveal className="text-2xl text-gray-400 group-hover:text-white transition-colors duration-300">
+                <TextReveal className="text-sm md:text-[1rem] lg:text-2xl text-gray-400 group-hover:text-white transition-colors duration-300">
                   <h1 className="font-mori">
                   I build efficient, scalable web applications using Laravel, React, and Tailwind CSS — delivering clean backends, interactive frontends, and seamless user experiences.
                   </h1>
@@ -69,31 +70,42 @@ const Gallery = () => {
 
             {/* Android Dev */}
             <div className="group font-mori flex w-full h-full pt-5 justify-start gap-8 transition-colors duration-300">
-              <div className="w-2/6 text-4xl">
+              <div className="w-2/6 text-2xl md:text-3xl lg:text-4xl">
+              <TextReveal>
                 <h1 className="text-gray-400 group-hover:text-white transition-colors duration-300">
                   Android Dev
                 </h1>
+              </TextReveal>
               </div>
 
               <div className="w-4/6">
-                <h1 className="text-2xl font-mori text-gray-400 group-hover:text-white transition-colors duration-300">
+              <TextReveal>
+                <h1 className="text-sm md:text-[1rem] lg:text-2xl font-mori text-gray-400 group-hover:text-white transition-colors duration-300">
                   By leveraging Flutter’s expressive UI and fast development cycle, I deliver Android apps that are both beautiful and functional — built from a single codebase, yet optimized for native performance and responsiveness.
                 </h1>
+              </TextReveal>
+
               </div>
             </div>
 
             {/* UI/UX Design */}
             <div className="group font-mori flex w-full h-full pt-5 justify-start gap-8 transition-colors duration-300">
-              <div className="w-2/6 text-4xl">
+              <div className="w-2/6 text-2xl md:text-3xl lg:text-4xl">
+              <TextReveal>
                 <h1 className="text-gray-400 group-hover:text-white transition-colors duration-300">
                   UI/UX Design
                 </h1>
+              </TextReveal>
+
               </div>
 
               <div className="w-4/6">
-                <h1 className="text-2xl font-mori text-gray-400 group-hover:text-white transition-colors duration-300">
+               <TextReveal>
+                <h1 className="text-sm md:text-[1rem] lg:text-2xl font-mori text-gray-400 group-hover:text-white transition-colors duration-300">
                   With a user-centered approach, I design seamless digital experiences — from wireframes and prototypes to polished interfaces — ensuring that every interaction feels natural, purposeful, and efficient.
                 </h1>
+              </TextReveal>
+
               </div>
             </div>
           </div>
