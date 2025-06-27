@@ -15,18 +15,16 @@ const projects = [
     name: "FloodSenseAI",
     type: "Android Dev",
     previewText: "AI-powered flood detection system.",
-    logo: "/photos/floodsenseai.png",
   },
   {
     name: "Bumdesma",
     type: "Fullstack Dev",
     previewText: "Village enterprise management site.",
-    logo: "/photos/bumdesma.png",
   },
   {
     name: "SIGASI",
     type: "FrontEnd Dev",
-    previewText: "App for managing tasks & team.",
+    previewText: "SIGASI (Sistem Informasi Geospasial Anak Sehat Indonesia) is a web-based Geographic Information System (GIS).",
   },
   {
     name: "WeCare",
@@ -37,17 +35,17 @@ const projects = [
   {
     name: "SITARI",
     type: "Backend Dev",
-    previewText: "App for managing tasks & team.",
+    previewText: "SITARI (Sistem Inventarisasi dan Peminjaman Barang Kampus) is a custom-built inventory management system.",
   },
   {
     name: "SoilAI",
     type: "Backend Dev",
-    previewText: "App for managing tasks & team.",
+    previewText: "SoilAI is a research-based project that explores the integration of Artificial Intelligence in analyzing soil health and characteristics.",
   },
   {
     name: "PMI Pusdiklat Jateng App",
     type: "Android Dev",
-    previewText: "App for managing tasks & team.",
+    previewText: "A web-based room reservation system developed for the PMI (Indonesian Red Cross) Training Center in Central Java.",
   },
 ];
 
@@ -65,12 +63,12 @@ const certifications = [
   {
     name: "Junior Web Developer",
     type: "BNSP",
-    previewText: "Certified by BNSP.",
+    previewText: "Web Developer Certified by BNSP.",
   },
   {
     name: "SQL Certified",
     type: "Oracle",
-    previewText: "Certified by Oracle.",
+    previewText: "SQL Certified by Oracle.",
   },
 ];
 
@@ -78,7 +76,7 @@ const awards = [
   { 
     name: "1st Winner Essay Competition", 
     type: "Competition", 
-    previewText: "Winning a essay competition", 
+    previewText: "Winning an Essay Competition", 
    },
   { 
     name: "2nd Place Winner UI/UX Competition", 
