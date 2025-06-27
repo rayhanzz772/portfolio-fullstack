@@ -14,12 +14,12 @@ const projects = [
   {
     name: "FloodSenseAI",
     type: "Android Dev",
-    previewText: "AI-powered flood detection system.",
+    previewText: "AI-powered flood detection system. Delivering real-time alerts via cross-platform app adopted by 3+ districts in Central Java.",
   },
   {
     name: "Bumdesma",
     type: "Fullstack Dev",
-    previewText: "Village enterprise management site.",
+    previewText: "Village enterprise management site. BUMDESMA (Badan Usaha Milik Desa Bersama) Kota Kendal, located in the Ngareanak Subdistrict.",
   },
   {
     name: "SIGASI",
@@ -29,7 +29,7 @@ const projects = [
   {
     name: "WeCare",
     type: "UI/UX Design",
-    previewText: "Mental health support platform.",
+    previewText: "WeCare is its integration with biometric sensors to track mental health through heart rate activity.",
     logo: "/photos/WECARE.png",
   },
   {
@@ -45,7 +45,7 @@ const projects = [
   {
     name: "PMI Pusdiklat Jateng App",
     type: "Android Dev",
-    previewText: "A web-based room reservation system developed for the PMI (Indonesian Red Cross) Training Center in Central Java.",
+    previewText: "A web-based room reservation system developed for the PMI Training Center in Central Java.",
   },
 ];
 
@@ -53,12 +53,12 @@ const certifications = [
   {
     name: "Applied Machine Learning",
     type: "Dicoding",
-    previewText: "Certified by Dicoding, focused on applied ML.",
+    previewText: "Certified by Dicoding, focused on applied Machine Learning.",
   },
   {
     name: "Machine Learning Android",
     type: "Dicoding",
-    previewText: "Certified by Dicoding, focused on ML Android.",
+    previewText: "Certified by Dicoding, focused on applied Machine Learning to Android.",
   },
   {
     name: "Junior Web Developer",
@@ -86,7 +86,7 @@ const awards = [
   {
      name: "SoilAI", 
      type: "Paper", 
-     previewText: "Researching immersive tools", 
+     previewText: "SoilAI is a research-based project that explores the integration of Artificial Intelligence in analyzing soil health and characteristics.", 
   },
 ];
 
@@ -248,7 +248,7 @@ const Projects = () => {
                     key={item.name}
                     variants={itemVariants}
                     className="relative group overflow-visible cursor-pointer"
-                    onMouseEnter={() => setHovered(index)}
+                    onMouseEnter={() => setHovered(item)}
                     onMouseLeave={() => setHovered(null)}
                   >
                     <Link to={linkPath} className="block">
@@ -271,11 +271,8 @@ const Projects = () => {
 
             </motion.ul>
           </AnimatePresence>
-
-
-
           <AnimatePresence>
-            {hovered !== null && data[hovered] && (
+            {hovered && (
               <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -288,10 +285,10 @@ const Projects = () => {
                   transform: "translate(-50%, -190%)",
                 }}
               >
-                <div className="bg-[#0e0e0e] text-white rounded-3xl shadow-xl px-4 py-4 flex items-center space-x-4 w-90">
-                  <div className="max-w-[180px]">
+                <div className="bg-[#0e0e0e] text-white rounded-3xl shadow-xl px-4 py-4 flex items-center space-x-2 w-96">
+                  <div className="max-w-full">
                     <p className="font-thin text-lg break-words">
-                      {data[hovered].previewText}
+                      {hovered.previewText}
                     </p>
                   </div>
                 </div>
