@@ -98,8 +98,8 @@ function Hero() {
           {/* Kolom kanan (tumpuk di mobile, sejajar di desktop) */}
           <div className="flex flex-col md:flex-row md:justify-between gap-4 md:gap-6 w-full">
             <div>
-              <p className="text-gray-800 font-semibold">Phone:</p>
-              <p>+62 89652616158</p>
+              <p className="text-gray-800 font-semibold">Availability:</p>
+              <p>Anytime</p>
             </div>
 
             <div>
@@ -113,8 +113,8 @@ function Hero() {
             </div>
 
             <div>
-              <p className="text-gray-800 font-semibold">Availability:</p>
-              <p>Anytime</p>
+              <p className="text-gray-800 font-semibold">Phone:</p>
+              <p>+62 89652616158</p>
             </div>
           </div>
         </div>

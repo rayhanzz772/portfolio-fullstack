@@ -6,6 +6,7 @@ import CurtainOpening from '../components/CurtainOpening';
 import CustomAnimatedSeparator from "../components/CustomAnimatedSeparator";
 import { Link } from "react-router-dom";
 import useClickAway from "react-use/lib/useClickAway"; // optional, auto-close
+import { useLenis } from '../hooks/useLenis';
 
 
 const ITEMS_PER_PAGE = 4;
@@ -14,77 +15,81 @@ const projects = [
     name: "FloodSenseAI",
     type: "Android Dev",
     previewText: "AI-powered flood detection system.",
-    logo: "/portfolio/photos/floodsenseai.png",
+    logo: "/photos/floodsenseai.png",
   },
   {
     name: "Bumdesma",
     type: "Fullstack Dev",
     previewText: "Village enterprise management site.",
-    logo: "/portfolio/photos/bumdesma.png",
+    logo: "/photos/bumdesma.png",
   },
   {
     name: "SIGASI",
     type: "FrontEnd Dev",
     previewText: "App for managing tasks & team.",
-    logo: "/portfolio/photos/SIGASI.png",
   },
   {
-    name: "Mental Care App",
+    name: "WeCare",
     type: "UI/UX Design",
     previewText: "Mental health support platform.",
-    logo: "/portfolio/photos/WECARE.png",
+    logo: "/photos/WECARE.png",
   },
   {
     name: "SITARI",
     type: "Backend Dev",
     previewText: "App for managing tasks & team.",
-    logo: "/portfolio/photos/SIGASI.png",
   },
   {
     name: "SoilAI",
     type: "Backend Dev",
     previewText: "App for managing tasks & team.",
-    logo: "/portfolio/photos/SIGASI.png",
   },
   {
     name: "PMI Pusdiklat Jateng App",
     type: "Android Dev",
     previewText: "App for managing tasks & team.",
-    logo: "/portfolio/photos/SIGASI.png",
   },
 ];
 
 const certifications = [
   {
-    name: "Dicoding Machine Learning",
+    name: "Applied Machine Learning",
     type: "Dicoding",
-    previewText: "Certified by BNSP, focused on ML fundamentals.",
-    logo: "/portfolio/photos/cert_ml.png",
+    previewText: "Certified by Dicoding, focused on applied ML.",
   },
   {
     name: "Machine Learning Android",
     type: "Dicoding",
-    previewText: "Certified by BNSP, focused on ML fundamentals.",
-    logo: "/portfolio/photos/cert_ml.png",
+    previewText: "Certified by Dicoding, focused on ML Android.",
   },
   {
     name: "Junior Web Developer",
     type: "BNSP",
-    previewText: "AWS foundational cloud certification.",
-    logo: "/portfolio/photos/cert_aws.png",
+    previewText: "Certified by BNSP.",
   },
   {
     name: "SQL Certified",
     type: "Oracle",
-    previewText: "AWS foundational cloud certification.",
-    logo: "portfolio/photos/cert_aws.png",
+    previewText: "Certified by Oracle.",
   },
 ];
 
 const awards = [
-  { name: "1st Winner Essay Competition", type: "Competition", previewText: "Researching immersive tools", logo: "/photos/arvr.png" },
-  { name: "2nd Place Winner UI/UX Competition", type: "Competition", previewText: "Researching immersive tools", logo: "/photos/arvr.png" },
-  { name: "SoilAI", type: "Paper", previewText: "Researching immersive tools", logo: "/photos/arvr.png" },
+  { 
+    name: "1st Winner Essay Competition", 
+    type: "Competition", 
+    previewText: "Winning a essay competition", 
+   },
+  { 
+    name: "2nd Place Winner UI/UX Competition", 
+    type: "Competition", 
+    previewText: "Winning an UI/UX Competition", 
+   },
+  {
+     name: "SoilAI", 
+     type: "Paper", 
+     previewText: "Researching immersive tools", 
+  },
 ];
 
 const listVariants = {
@@ -105,6 +110,7 @@ const dataMap = {
 };
 
 const Projects = () => {
+  useLenis();
   const containerRef = useRef(null);
   const [hovered, setHovered] = useState(null);
   const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
@@ -228,33 +234,42 @@ const Projects = () => {
               exit="exit"
               className="space-y-8 relative"
             >
-              {paginatedData.map((item, index) => (
-                <motion.li
-                  key={item.name}
-                  variants={itemVariants}
-                  className="relative group overflow-visible cursor-pointer"
-                  onMouseEnter={() => setHovered(index)}
-                  onMouseLeave={() => setHovered(null)}
-                >
-                  <Link
-                    to={activeTab === "projects" ? `/projects/${item.name.toLowerCase().replace(/\s+/g, "-")}` : "#"}
-                    className="block"
+              {paginatedData.map((item, index) => {
+                const linkPath =
+                  activeTab === "projects"
+                    ? `/projects/${item.name.toLowerCase().replace(/\s+/g, "-")}`
+                    : activeTab === "certifications"
+                    ? `/certifications/${item.name.toLowerCase().replace(/\s+/g, "-")}`
+                    : activeTab === "awards"
+                    ? `/awards/${item.name.toLowerCase().replace(/\s+/g, "-")}`
+                    : "#";
+
+                return (
+                  <motion.li
+                    key={item.name}
+                    variants={itemVariants}
+                    className="relative group overflow-visible cursor-pointer"
+                    onMouseEnter={() => setHovered(index)}
+                    onMouseLeave={() => setHovered(null)}
                   >
-                    <div className="flex justify-between items-center">
-                      <motion.div className="flex items-center space-x-4 origin-left">
-                        <h1 className="text-2xl font-ppvalve">X</h1>
-                        <span className="text-xl md:text-3xl font-medium group-hover:pl-2 transition-all">
-                          {item.name}
+                    <Link to={linkPath} className="block">
+                      <div className="flex justify-between items-center">
+                        <motion.div className="flex items-center space-x-4 origin-left">
+                          <h1 className="text-2xl font-ppvalve">X</h1>
+                          <span className="text-xl md:text-3xl font-medium group-hover:pl-2 transition-all">
+                            {item.name}
+                          </span>
+                        </motion.div>
+                        <span className="text-sm sm:text-base font-medium text-gray-500">
+                          {item.type}
                         </span>
-                      </motion.div>
-                      <span className="text-sm sm:text-base font-medium text-gray-500">
-                        {item.type}
-                      </span>
-                    </div>
-                    <CustomAnimatedSeparator my={0} h={1} mx={0} />
-                  </Link>
-                </motion.li>
-              ))}
+                      </div>
+                      <CustomAnimatedSeparator my={0} h={1} mx={0} />
+                    </Link>
+                  </motion.li>
+                );
+              })}
+
             </motion.ul>
           </AnimatePresence>
 
@@ -274,12 +289,7 @@ const Projects = () => {
                   transform: "translate(-50%, -190%)",
                 }}
               >
-                <div className="bg-[#0e0e0e] text-white rounded-3xl shadow-xl px-2 py-2 flex items-center space-x-4 w-90">
-                  <img
-                    src={data[hovered].logo}
-                    alt={`${data[hovered].name} preview`}
-                    className="w-60 h-24 rounded-2xl"
-                  />
+                <div className="bg-[#0e0e0e] text-white rounded-3xl shadow-xl px-4 py-4 flex items-center space-x-4 w-90">
                   <div className="max-w-[180px]">
                     <p className="font-thin text-lg break-words">
                       {data[hovered].previewText}

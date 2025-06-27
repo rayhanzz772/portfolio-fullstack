@@ -35,7 +35,7 @@ return (
     <div className="px-6 sm:px-6 md:px-16 mx-auto py-2">
       <div className="flex items-center justify-between">
         <div>
-          <Link to="/portfolio">
+          <Link to="/">
             <img
               src={logo}
               alt="logo"

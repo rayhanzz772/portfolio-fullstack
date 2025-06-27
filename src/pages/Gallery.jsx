@@ -42,12 +42,17 @@ const Gallery = () => {
             </TextReveal> 
           </div>
 
-          <div className="flex w-full h-full pt-5 justify-around">
-            <div className="bg-orange-600 w-8 h-4 mr-6 lg:mr-9 mt-2 rounded-full"></div>
-            <TextReveal className="text-2xl md:text-4xl xl:text-8xl text-left lg:mb-10">
-              <h1 className="font-mori">Turn <span className="animated-text">complexity</span> into clarity through thoughtful software engineering.</h1>
-            </TextReveal>
+         <div className="flex w-full h-full pt-5 gap-4 items-start">
+          <div className="flex-shrink-0">
+            <div className="bg-orange-600 w-4 h-4 rounded-full"></div>
           </div>
+          <TextReveal className="text-2xl md:text-4xl xl:text-8xl text-left">
+            <h1 className="font-mori">
+              Turn <span className="animated-text">complexity</span> into clarity through thoughtful software engineering.
+            </h1>
+          </TextReveal>
+        </div>
+
 
           <div className="my-10">
             {/* Website Dev */}

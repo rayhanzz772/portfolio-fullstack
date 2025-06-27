@@ -18,8 +18,8 @@ const staggerContainer = {
   },
 };  
 
-const FloodSenseAI = () => {
-  useLenis();
+const Sitari = () => {
+useLenis();
   const containerRef = useRef(null);
 
   return (
@@ -44,6 +44,30 @@ const FloodSenseAI = () => {
             </Link>
         </div>
 
+        {/* Tombol kanan Github */}
+        <div className="fixed md:mr-10 right-4 top-4 md:top-1/2 md:-translate-y-1/2 z-50">
+            <a
+                href="https://github.com/rayhanzz772/system_inventory" // ganti dengan link GitHub kamu
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-black text-white w-14 h-14 rounded-full shadow-md hover:bg-gray-800 transition flex items-center justify-center"
+                aria-label="GitHub Repository"
+            >
+                {/* Ikon GitHub */}
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="w-6 h-6 md:w-7 md:h-7"
+                >
+                <path
+                    fillRule="evenodd"
+                    d="M12 0C5.37 0 0 5.373 0 12a12 12 0 008.205 11.385c.6.113.82-.26.82-.577v-2.036c-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.09-.745.082-.729.082-.729 1.205.086 1.838 1.24 1.838 1.24 1.07 1.833 2.806 1.304 3.492.997.107-.776.418-1.305.76-1.604-2.665-.304-5.466-1.334-5.466-5.933 0-1.31.468-2.38 1.236-3.22-.123-.303-.536-1.524.117-3.176 0 0 1.008-.322 3.3 1.23a11.518 11.518 0 016 0c2.29-1.552 3.297-1.23 3.297-1.23.655 1.652.242 2.873.12 3.176.77.84 1.235 1.91 1.235 3.22 0 4.61-2.804 5.625-5.475 5.921.43.372.814 1.103.814 2.222v3.293c0 .319.218.694.825.576A12.003 12.003 0 0024 12c0-6.627-5.373-12-12-12z"
+                    clipRule="evenodd"
+                />
+                </svg>
+            </a>
+        </div>
 
 
 
@@ -55,7 +79,7 @@ const FloodSenseAI = () => {
 
             {/* Judul */}
             <motion.div variants={fadeInUp} className="w-11/12 md:w-9/12 text-left">
-                <h1 className="text-4xl font-semibold">FloodSenseAI</h1>
+                <h1 className="text-4xl font-semibold">SITARI</h1>
             </motion.div>
 
             <div className="w-11/12 md:w-9/12">
@@ -72,26 +96,23 @@ const FloodSenseAI = () => {
                 <div className="md:col-span-2 flex flex-col gap-2">
                     <div className="flex items-center">
                     <span className="bg-black  px-4 py-1 rounded-full text-white text-l md:text-xl mr-4 md:mr-6 mb-2">Date</span>
-                    <p className="text-l font-semibold md:text-xl">2025</p>
+                    <p className="text-l font-semibold md:text-xl">2024</p>
                     </div>
                     <div className="flex items-center">
                     <span className="bg-black  px-4 py-1 rounded-full text-white text-l md:text-xl mr-4 md:mr-6 mb-2">Role</span>
-                    <p className="text-l font-semibold md:text-xl">Android Developer</p>
+                    <p className="text-l font-semibold md:text-xl">Fullstack Developer</p>
                     </div>
                     <div className="flex items-center">
                     <span className="bg-black  px-4 py-1 rounded-full text-white text-l md:text-xl mr-4 md:mr-6">Tech</span>
-                    <p className="text-l font-semibold md:text-xl">Flutter</p>
+                    <p className="text-l font-semibold md:text-xl">Wordpress, VPS</p>
                     </div>
                 </div>
 
                 {/* Kanan: Deskripsi */}
                 <div className="md:col-span-4 text-sm md:text-xl font-normal md:font-thin">
                     <p>
-                    AI/IoT flood monitoring system using Flutter with API caching,
-                    delivering real-time alerts via cross-platform app adopted by 3+ districts in Central Java.
-                    Designed an interactive dashboard to visualize real-time flood data for users and authorities,
-                    enhancing situational awareness and response coordination.
-
+                   SITARI (Sistem Inventarisasi dan Peminjaman Barang Kampus) is a custom-built inventory management system designed to streamline the tracking and lending of institutional assets within a university environment. The system was developed to address the need for a more efficient, transparent, and organized way of managing item requests and usage across departments or student activities.
+                   SITARI allows users—such as students, staff, or administrators—to easily browse available items, submit borrowing requests, and monitor return deadlines through a user-friendly web interface. Administrators have access to a dashboard for managing inventory records, approving or rejecting requests, and generating usage reports.
                     </p>
                 </div>
             </motion.div>
@@ -118,8 +139,10 @@ const FloodSenseAI = () => {
                     <h1 className="text-2xl font-semibold">Design Preview</h1>
                 </div>
 
-                <div className="flex justify-center items-center">
-                    <img src="/photos/floodsenseai/preview_floodsenseai.png" className="md:w-4/6" alt="floodsenseai" />
+                <div className="flex justify-center items-center flex-col rounded-2xl">
+                    <img src="/photos/sitari/prev1.png" className="md:w-6/6 shadow-2xl" alt="img" />
+                    <img src="/photos/sitari/prev2.png" className="md:w-6/6 shadow-2xl" alt="img" />
+                    <img src="/photos/sitari/prev3.png" className="md:w-6/6 shadow-2xl" alt="img" />
                 </div>
 
                 <div className="w-11/12 md:w-9/12 items-start flex gap-3">
@@ -136,9 +159,8 @@ const FloodSenseAI = () => {
                     <h1 className="text-2xl font-semibold">Work Preview</h1>
                 </div>
                 <div className="flex justify-center items-center gap-8 flex-col">
-                    <img src="/photos/floodsenseai/1.jpeg" className="shadow-2xl" alt="floodsenseai" />
-                    <img src="/photos/floodsenseai/3.jpeg" className="shadow-2xl" alt="floodsenseai" />
-                    <img src="/photos/floodsenseai/2.jpeg" className="shadow-2xl" alt="floodsenseai" />
+                    <img src="/photos/sitari/1.jpeg" className="shadow-2xl" alt="sitari" />
+                    <img src="/photos/sitari/2.jpeg" className="shadow-2xl" alt="sitari" />
                 </div>
             </motion.div>
             
@@ -148,4 +170,4 @@ const FloodSenseAI = () => {
   );
 };
 
-export default FloodSenseAI;
+export default Sitari;

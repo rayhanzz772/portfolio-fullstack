@@ -18,7 +18,7 @@ const staggerContainer = {
   },
 };  
 
-const FloodSenseAI = () => {
+const PMI = () => {
   useLenis();
   const containerRef = useRef(null);
 
@@ -44,9 +44,6 @@ const FloodSenseAI = () => {
             </Link>
         </div>
 
-
-
-
         {/* Parent */}
         <motion.article
             className="w-[98vw] min-h-screen max-w-screen-xl mx-auto py-20 flex flex-col items-center"
@@ -55,7 +52,7 @@ const FloodSenseAI = () => {
 
             {/* Judul */}
             <motion.div variants={fadeInUp} className="w-11/12 md:w-9/12 text-left">
-                <h1 className="text-4xl font-semibold">FloodSenseAI</h1>
+                <h1 className="text-4xl font-semibold">PMI Pusdiklat Jateng</h1>
             </motion.div>
 
             <div className="w-11/12 md:w-9/12">
@@ -87,11 +84,8 @@ const FloodSenseAI = () => {
                 {/* Kanan: Deskripsi */}
                 <div className="md:col-span-4 text-sm md:text-xl font-normal md:font-thin">
                     <p>
-                    AI/IoT flood monitoring system using Flutter with API caching,
-                    delivering real-time alerts via cross-platform app adopted by 3+ districts in Central Java.
-                    Designed an interactive dashboard to visualize real-time flood data for users and authorities,
-                    enhancing situational awareness and response coordination.
-
+                        This application is a web-based room reservation system developed for the PMI (Indonesian Red Cross) Training Center in Central Java. It is designed to simplify and streamline the process of booking accommodation for staff, trainees, and guests participating in various training programs or organizational activities.
+                        The system allows users to view available rooms, make reservations, and receive automated booking confirmations. Admins can manage room availability, monitor occupancy status, and generate booking reports through a centralized dashboard.
                     </p>
                 </div>
             </motion.div>
@@ -118,8 +112,14 @@ const FloodSenseAI = () => {
                     <h1 className="text-2xl font-semibold">Design Preview</h1>
                 </div>
 
-                <div className="flex justify-center items-center">
-                    <img src="/photos/floodsenseai/preview_floodsenseai.png" className="md:w-4/6" alt="floodsenseai" />
+                <div className="flex justify-center items-center gap-6 flex-row">
+                    <img src="/photos/pmi/prev1.png" className="md:w-2/6" alt="pmi" />
+                    <img src="/photos/pmi/prev2.png" className="md:w-2/6" alt="pmi" />
+                </div>
+
+                <div className="flex justify-center items-center gap-6 flex-row">
+                    <img src="/photos/pmi/prev3.png" className="md:w-2/6" alt="pmi" />
+                    <img src="/photos/pmi/prev4.png" className="md:w-2/6" alt="pmi" />
                 </div>
 
                 <div className="w-11/12 md:w-9/12 items-start flex gap-3">
@@ -136,9 +136,7 @@ const FloodSenseAI = () => {
                     <h1 className="text-2xl font-semibold">Work Preview</h1>
                 </div>
                 <div className="flex justify-center items-center gap-8 flex-col">
-                    <img src="/photos/floodsenseai/1.jpeg" className="shadow-2xl" alt="floodsenseai" />
-                    <img src="/photos/floodsenseai/3.jpeg" className="shadow-2xl" alt="floodsenseai" />
-                    <img src="/photos/floodsenseai/2.jpeg" className="shadow-2xl" alt="floodsenseai" />
+                    <h1>Sorry, Work Preview currently not available.</h1>
                 </div>
             </motion.div>
             
@@ -148,4 +146,4 @@ const FloodSenseAI = () => {
   );
 };
 
-export default FloodSenseAI;
+export default PMI;

@@ -18,7 +18,7 @@ const staggerContainer = {
   },
 };  
 
-const FloodSenseAI = () => {
+const SqlCertified = () => {
   useLenis();
   const containerRef = useRef(null);
 
@@ -55,7 +55,7 @@ const FloodSenseAI = () => {
 
             {/* Judul */}
             <motion.div variants={fadeInUp} className="w-11/12 md:w-9/12 text-left">
-                <h1 className="text-4xl font-semibold">FloodSenseAI</h1>
+                <h1 className="text-4xl font-semibold">SQL Certified</h1>
             </motion.div>
 
             <div className="w-11/12 md:w-9/12">
@@ -72,26 +72,23 @@ const FloodSenseAI = () => {
                 <div className="md:col-span-2 flex flex-col gap-2">
                     <div className="flex items-center">
                     <span className="bg-black  px-4 py-1 rounded-full text-white text-l md:text-xl mr-4 md:mr-6 mb-2">Date</span>
-                    <p className="text-l font-semibold md:text-xl">2025</p>
+                    <p className="text-l font-semibold md:text-xl">2022</p>
                     </div>
                     <div className="flex items-center">
-                    <span className="bg-black  px-4 py-1 rounded-full text-white text-l md:text-xl mr-4 md:mr-6 mb-2">Role</span>
-                    <p className="text-l font-semibold md:text-xl">Android Developer</p>
+                    <span className="bg-black  px-4 py-1 rounded-full text-white text-l md:text-xl mr-4 md:mr-6 mb-2">Type</span>
+                    <p className="text-l font-semibold md:text-xl">SQL</p>
                     </div>
                     <div className="flex items-center">
-                    <span className="bg-black  px-4 py-1 rounded-full text-white text-l md:text-xl mr-4 md:mr-6">Tech</span>
-                    <p className="text-l font-semibold md:text-xl">Flutter</p>
+                    <span className="bg-black  px-7 py-1 rounded-full text-white text-l md:text-xl mr-4 md:mr-6">By</span>
+                    <p className="text-l font-semibold md:text-xl">Oracle</p>
                     </div>
                 </div>
 
                 {/* Kanan: Deskripsi */}
                 <div className="md:col-span-4 text-sm md:text-xl font-normal md:font-thin">
                     <p>
-                    AI/IoT flood monitoring system using Flutter with API caching,
-                    delivering real-time alerts via cross-platform app adopted by 3+ districts in Central Java.
-                    Designed an interactive dashboard to visualize real-time flood data for users and authorities,
-                    enhancing situational awareness and response coordination.
-
+                    This certification demonstrates my foundational understanding of Structured Query Language (SQL) through the Oracle Academy curriculum. The course covered essential topics such as querying and manipulating data, creating and managing tables, using joins and subqueries, and applying functions for data analysis.
+                    Through hands-on practice with Oracle Database, I developed skills in writing efficient and secure SQL queries aligned with industry standards.
                     </p>
                 </div>
             </motion.div>
@@ -115,30 +112,11 @@ const FloodSenseAI = () => {
                         <title>asterisk</title>
                         <path d="M1.728 20.992q-0.416 1.6 0.416 3.008 0.832 1.44 2.432 1.856t3.040-0.384q0.832-0.48 2.56-1.92t3.168-2.912q-0.608 2.016-0.96 4.192t-0.384 3.168q0 1.664 1.184 2.848t2.816 1.152 2.816-1.152 1.184-2.848q0-0.96-0.384-3.168t-0.928-4.192q1.44 1.504 3.168 2.944t2.528 1.888q1.44 0.832 3.040 0.384t2.432-1.856 0.416-3.008-1.888-2.464q-0.864-0.48-2.944-1.248t-4.064-1.28q2.016-0.512 4.096-1.28t2.912-1.248q1.44-0.832 1.888-2.432t-0.416-3.040q-0.832-1.44-2.432-1.856t-3.040 0.384q-0.832 0.512-2.528 1.92t-3.168 2.912q0.576-1.984 0.928-4.192t0.384-3.168q0-1.632-1.184-2.816t-2.816-1.184-2.816 1.184-1.184 2.816q0 0.992 0.384 3.168t0.96 4.192q-1.44-1.472-3.168-2.88t-2.56-1.952q-1.44-0.8-3.040-0.384t-2.432 1.856-0.416 3.040 1.888 2.432q0.832 0.48 2.912 1.248t4.128 1.28q-2.016 0.512-4.096 1.28t-2.944 1.248q-1.44 0.832-1.888 2.464z" />
                     </svg>
-                    <h1 className="text-2xl font-semibold">Design Preview</h1>
+                    <h1 className="text-2xl font-semibold">Certificate Preview</h1>
                 </div>
 
-                <div className="flex justify-center items-center">
-                    <img src="/photos/floodsenseai/preview_floodsenseai.png" className="md:w-4/6" alt="floodsenseai" />
-                </div>
-
-                <div className="w-11/12 md:w-9/12 items-start flex gap-3">
-                    <svg
-                        viewBox="0 0 32 32"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="currentColor"
-                        stroke="currentColor"
-                        className="w-7 h-7"
-                    >
-                        <title>asterisk</title>
-                        <path d="M1.728 20.992q-0.416 1.6 0.416 3.008 0.832 1.44 2.432 1.856t3.040-0.384q0.832-0.48 2.56-1.92t3.168-2.912q-0.608 2.016-0.96 4.192t-0.384 3.168q0 1.664 1.184 2.848t2.816 1.152 2.816-1.152 1.184-2.848q0-0.96-0.384-3.168t-0.928-4.192q1.44 1.504 3.168 2.944t2.528 1.888q1.44 0.832 3.040 0.384t2.432-1.856 0.416-3.008-1.888-2.464q-0.864-0.48-2.944-1.248t-4.064-1.28q2.016-0.512 4.096-1.28t2.912-1.248q1.44-0.832 1.888-2.432t-0.416-3.040q-0.832-1.44-2.432-1.856t-3.040 0.384q-0.832 0.512-2.528 1.92t-3.168 2.912q0.576-1.984 0.928-4.192t0.384-3.168q0-1.632-1.184-2.816t-2.816-1.184-2.816 1.184-1.184 2.816q0 0.992 0.384 3.168t0.96 4.192q-1.44-1.472-3.168-2.88t-2.56-1.952q-1.44-0.8-3.040-0.384t-2.432 1.856-0.416 3.040 1.888 2.432q0.832 0.48 2.912 1.248t4.128 1.28q-2.016 0.512-4.096 1.28t-2.944 1.248q-1.44 0.832-1.888 2.464z" />
-                    </svg>
-                    <h1 className="text-2xl font-semibold">Work Preview</h1>
-                </div>
-                <div className="flex justify-center items-center gap-8 flex-col">
-                    <img src="/photos/floodsenseai/1.jpeg" className="shadow-2xl" alt="floodsenseai" />
-                    <img src="/photos/floodsenseai/3.jpeg" className="shadow-2xl" alt="floodsenseai" />
-                    <img src="/photos/floodsenseai/2.jpeg" className="shadow-2xl" alt="floodsenseai" />
+                <div className="flex justify-center items-center flex-cols">
+                    <img src="/photos/SqlCertified/prev1.webp" className="md:w-5/6" alt="SqlCertified" />
                 </div>
             </motion.div>
             
@@ -148,4 +126,4 @@ const FloodSenseAI = () => {
   );
 };
 
-export default FloodSenseAI;
+export default SqlCertified;

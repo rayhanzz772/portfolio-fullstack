@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
-import Header from "../Header";
-import AnimatedSeparator from "../../components/AnimatedSeparator";
+import { useLenis } from '../../hooks/useLenis';
 import { Link } from "react-router-dom"; // pastikan sudah di-import
 import CustomAnimatedSeparator from "../../components/CustomAnimatedSeparator";
 
@@ -20,6 +19,7 @@ const staggerContainer = {
 };  
 
 const Bumdesma = () => {
+useLenis();
   const containerRef = useRef(null);
 
   return (
@@ -32,12 +32,6 @@ const Bumdesma = () => {
       variants={staggerContainer}
     >
 
-        {/* Background Gradient */}
-
-        <div className="absolute inset-0 -z-10 pointer-events-none">
-           <div className="absolute inset-0 bg-[linear-gradient(to_bottom_right,_#fcd7f733,_#e2f0ff33,_#cfcaff33)] rounded-full blur-2xl" />
-        </div>
-
         {/* Tombol Back */}
         
         <div className="fixed left-5 md:ml-10 top-4 md:top-1/2 md:-translate-y-1/2 z-50">
@@ -49,32 +43,6 @@ const Bumdesma = () => {
                 ←
             </Link>
         </div>
-
-        {/* Tombol kanan Github */}
-        <div className="fixed md:mr-10 right-4 top-4 md:top-1/2 md:-translate-y-1/2 z-50">
-            <a
-                href="https://github.com/username/repository" // ganti dengan link GitHub kamu
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-black text-white w-14 h-14 rounded-full shadow-md hover:bg-gray-800 transition flex items-center justify-center"
-                aria-label="GitHub Repository"
-            >
-                {/* Ikon GitHub */}
-                <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                className="w-6 h-6 md:w-7 md:h-7"
-                >
-                <path
-                    fillRule="evenodd"
-                    d="M12 0C5.37 0 0 5.373 0 12a12 12 0 008.205 11.385c.6.113.82-.26.82-.577v-2.036c-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.09-.745.082-.729.082-.729 1.205.086 1.838 1.24 1.838 1.24 1.07 1.833 2.806 1.304 3.492.997.107-.776.418-1.305.76-1.604-2.665-.304-5.466-1.334-5.466-5.933 0-1.31.468-2.38 1.236-3.22-.123-.303-.536-1.524.117-3.176 0 0 1.008-.322 3.3 1.23a11.518 11.518 0 016 0c2.29-1.552 3.297-1.23 3.297-1.23.655 1.652.242 2.873.12 3.176.77.84 1.235 1.91 1.235 3.22 0 4.61-2.804 5.625-5.475 5.921.43.372.814 1.103.814 2.222v3.293c0 .319.218.694.825.576A12.003 12.003 0 0024 12c0-6.627-5.373-12-12-12z"
-                    clipRule="evenodd"
-                />
-                </svg>
-            </a>
-        </div>
-
 
 
         {/* Parent */}
@@ -117,10 +85,8 @@ const Bumdesma = () => {
                 {/* Kanan: Deskripsi */}
                 <div className="md:col-span-4 text-sm md:text-xl font-normal md:font-thin">
                     <p>
-                    AI/IoT flood monitoring system using Flutter with API caching,
-                    delivering real-time alerts via cross-platform app adopted by 3+ districts in Central Java.
-                    Designed an interactive dashboard to visualize real-time flood data for users and authorities,
-                    enhancing situational awareness and response coordination.
+                    This project involved the development of a professional and responsive website for BUMDESMA (Badan Usaha Milik Desa Bersama) Kota Kendal, located in the Ngareanak Subdistrict. The primary goal was to establish a centralized online presence that effectively showcases BUMDESMA’s programs, financial transparency, and community-driven initiatives.
+                    The website was built using WordPress, with a customized theme tailored to the branding and informational needs of the organization. Key features include a news and announcement section, program documentation, gallery, contact form, and integration with Google Maps for accessibility.
                     </p>
                 </div>
             </motion.div>
@@ -147,8 +113,10 @@ const Bumdesma = () => {
                     <h1 className="text-2xl font-semibold">Design Preview</h1>
                 </div>
 
-                <div className="flex justify-center items-center">
-                    <img src="/portfolio/photos/preview_floodsenseai.png" className="md:w-4/6" alt="floodsenseai" />
+                <div className="flex justify-center items-center flex-col rounded-2xl">
+                    <img src="/photos/bumdesma/prev1.png" className="md:w-6/6 shadow-2xl" alt="img" />
+                    <img src="/photos/bumdesma/prev2.png" className="md:w-6/6 shadow-2xl" alt="img" />
+                    <img src="/photos/bumdesma/prev3.png" className="md:w-6/6 shadow-2xl" alt="img" />
                 </div>
 
                 <div className="w-11/12 md:w-9/12 items-start flex gap-3">
@@ -165,9 +133,9 @@ const Bumdesma = () => {
                     <h1 className="text-2xl font-semibold">Work Preview</h1>
                 </div>
                 <div className="flex justify-center items-center gap-8 flex-col">
-                    <img src="/portfolio/photos/floodsenseai/1.jpeg" className="rounded-2xl shadow-2xl" alt="floodsenseai" />
-                    <img src="/portfolio/photos/floodsenseai/3.jpeg" className="rounded-2xl shadow-2xl" alt="floodsenseai" />
-                    <img src="/portfolio/photos/floodsenseai/2.jpeg" className="rounded-2xl shadow-2xl" alt="floodsenseai" />
+                    <img src="/photos/bumdesma/1.jpeg" className="shadow-2xl" alt="bumdesma" />
+                    <img src="/photos/bumdesma/3.jpeg" className="shadow-2xl" alt="bumdesma" />
+                    <img src="/photos/bumdesma/2.jpeg" className="shadow-2xl" alt="bumdesma" />
                 </div>
             </motion.div>
             
