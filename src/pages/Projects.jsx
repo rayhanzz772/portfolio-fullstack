@@ -171,8 +171,9 @@ const Projects = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="px-3 py-2 rounded-full bg-black text-white"
+              className="w-10 h-10 flex items-center justify-center rounded-full bg-black text-white ml-4"
             >
+              {/* Isi tombol, misalnya ikon menu */}
               ☰
             </button>
           </div>
@@ -301,7 +302,7 @@ const Projects = () => {
           </AnimatePresence>
         </div>
           {totalPages > 1 && (
-            <div className="sticky md:fixed right-0 md:right-6 bottom-4 md:top-1/2 transform md:-translate-y-1/2 flex flex-row justify-center md:flex-col items-center gap-2 z-50">
+            <div className="sticky xl:fixed right-0 xl:right-6 bottom-4 xl:top-1/2 transform xl:-translate-y-1/2 flex flex-row justify-center xl:flex-col items-center gap-2 z-50">
               {[...Array(totalPages)].map((_, index) => (
                 <button
                   key={index + 1}

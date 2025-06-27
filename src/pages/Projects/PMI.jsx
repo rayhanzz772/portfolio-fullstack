@@ -111,13 +111,12 @@ const PMI = () => {
                     </svg>
                     <h1 className="text-2xl font-semibold">Design Preview</h1>
                 </div>
-
-                <div className="flex justify-center items-center gap-6 flex-row">
+                <div className="flex justify-center items-center gap-6 md:flex-row flex-col">
                     <img src="/photos/pmi/prev1.png" className="md:w-2/6" alt="pmi" />
                     <img src="/photos/pmi/prev2.png" className="md:w-2/6" alt="pmi" />
                 </div>
 
-                <div className="flex justify-center items-center gap-6 flex-row">
+                <div className="flex justify-center items-center gap-6 md:flex-row flex-col">
                     <img src="/photos/pmi/prev3.png" className="md:w-2/6" alt="pmi" />
                     <img src="/photos/pmi/prev4.png" className="md:w-2/6" alt="pmi" />
                 </div>

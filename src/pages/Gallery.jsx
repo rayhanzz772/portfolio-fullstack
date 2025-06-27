@@ -60,7 +60,7 @@ const Gallery = () => {
               <div className="w-2/6 text-2xl md:text-3xl lg:text-4xl">
                 <TextReveal>
                   <h1 className="text-gray-400 group-hover:text-white transition-colors duration-300">
-                  Website Dev
+                  Website
                   </h1>
                 </TextReveal>
               </div>
@@ -79,7 +79,7 @@ const Gallery = () => {
               <div className="w-2/6 text-2xl md:text-3xl lg:text-4xl">
               <TextReveal>
                 <h1 className="text-gray-400 group-hover:text-white transition-colors duration-300">
-                  Android Dev
+                  Android
                 </h1>
               </TextReveal>
               </div>
@@ -99,7 +99,7 @@ const Gallery = () => {
               <div className="w-2/6 text-2xl md:text-3xl lg:text-4xl">
               <TextReveal>
                 <h1 className="text-gray-400 group-hover:text-white transition-colors duration-300">
-                  UI/UX Design
+                  UI/UX
                 </h1>
               </TextReveal>
 
