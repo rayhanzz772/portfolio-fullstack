@@ -73,7 +73,7 @@ const SqlCertified = () => {
                     {[
                         { label: "Date", value: "2022" },
                         { label: "Type", value: "SQL" },
-                        { label: "By:", value: "Oracle" },
+                        { label: "By", value: "Oracle" },
                     ].map((item, idx) => (
                         <div className="flex items-center" key={idx}>
                         <span className="bg-black text-white px-4 py-1 rounded-full text-l md:text-xl mb-2 mr-4 md:mr-6 min-w-[90px] text-center">

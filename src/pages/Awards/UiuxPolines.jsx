@@ -70,7 +70,7 @@ const UiuxPolines = () => {
                     {[
                         { label: "Date", value: "2024" },
                         { label: "Type", value: "UI/UX Competition" },
-                        { label: "By:", value: "Polines" },
+                        { label: "By", value: "Polines" },
                     ].map((item, idx) => (
                         <div className="flex items-center" key={idx}>
                         <span className="bg-black text-white px-4 py-1 rounded-full text-l md:text-xl mb-2 mr-4 md:mr-6 min-w-[90px] text-center">

@@ -73,7 +73,7 @@ const AppliedML = () => {
                     {[
                         { label: "Date", value: "2024" },
                         { label: "Type", value: "Applied Machine Learning" },
-                        { label: "By:", value: "Dicoding" },
+                        { label: "By", value: "Dicoding" },
                     ].map((item, idx) => (
                         <div className="flex items-center" key={idx}>
                         <span className="bg-black text-white px-4 py-1 rounded-full text-l md:text-xl mb-2 mr-4 md:mr-6 min-w-[90px] text-center">
