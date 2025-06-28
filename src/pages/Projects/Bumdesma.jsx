@@ -66,20 +66,19 @@ useLenis();
             variants={fadeInUp}
             className="grid gap-6 w-11/12 md:w-9/12 grid-cols-1 md:grid-cols-6 text-lg"
             >
-                {/* Kiri: Detail Info */}
                 <div className="md:col-span-2 flex flex-col gap-2">
-                    <div className="flex items-center">
-                    <span className="bg-black  px-4 py-1 rounded-full text-white text-l md:text-xl mr-4 md:mr-6 mb-2">Date</span>
-                    <p className="text-l font-semibold md:text-xl">2024</p>
+                {[
+                    { label: "Date", value: "2025" },
+                    { label: "Role", value: "Fullstack Developer" },
+                    { label: "Tech", value: "VPS, Wordpress" },
+                ].map((item, idx) => (
+                    <div className="flex items-center" key={idx}>
+                    <span className="bg-black text-white px-4 py-1 rounded-full text-l md:text-xl mb-2 mr-4 md:mr-6 min-w-[90px] text-center">
+                        {item.label}
+                    </span>
+                    <p className="text-l font-semibold md:text-xl">{item.value}</p>
                     </div>
-                    <div className="flex items-center">
-                    <span className="bg-black  px-4 py-1 rounded-full text-white text-l md:text-xl mr-4 md:mr-6 mb-2">Role</span>
-                    <p className="text-l font-semibold md:text-xl">Fullstack Developer</p>
-                    </div>
-                    <div className="flex items-center">
-                    <span className="bg-black  px-4 py-1 rounded-full text-white text-l md:text-xl mr-4 md:mr-6">Tech</span>
-                    <p className="text-l font-semibold md:text-xl">Wordpress, VPS</p>
-                    </div>
+                ))}
                 </div>
 
                 {/* Kanan: Deskripsi */}

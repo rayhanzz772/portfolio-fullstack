@@ -70,18 +70,18 @@ const SqlCertified = () => {
             >
                 {/* Kiri: Detail Info */}
                 <div className="md:col-span-2 flex flex-col gap-2">
-                    <div className="flex items-center">
-                    <span className="bg-black  px-4 py-1 rounded-full text-white text-l md:text-xl mr-4 md:mr-6 mb-2">Date</span>
-                    <p className="text-l font-semibold md:text-xl">2022</p>
-                    </div>
-                    <div className="flex items-center">
-                    <span className="bg-black  px-4 py-1 rounded-full text-white text-l md:text-xl mr-4 md:mr-6 mb-2">Type</span>
-                    <p className="text-l font-semibold md:text-xl">SQL</p>
-                    </div>
-                    <div className="flex items-center">
-                    <span className="bg-black  px-7 py-1 rounded-full text-white text-l md:text-xl mr-4 md:mr-6">By</span>
-                    <p className="text-l font-semibold md:text-xl">Oracle</p>
-                    </div>
+                    {[
+                        { label: "Date", value: "2022" },
+                        { label: "Type", value: "SQL" },
+                        { label: "By:", value: "Oracle" },
+                    ].map((item, idx) => (
+                        <div className="flex items-center" key={idx}>
+                        <span className="bg-black text-white px-4 py-1 rounded-full text-l md:text-xl mb-2 mr-4 md:mr-6 min-w-[90px] text-center">
+                            {item.label}
+                        </span>
+                        <p className="text-l font-semibold md:text-xl">{item.value}</p>
+                        </div>
+                    ))}
                 </div>
 
                 {/* Kanan: Deskripsi */}

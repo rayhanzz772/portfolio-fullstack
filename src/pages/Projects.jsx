@@ -43,10 +43,26 @@ const projects = [
     previewText: "SoilAI is a research-based project that explores the integration of Artificial Intelligence in analyzing soil health and characteristics.",
   },
   {
+    name: "MentalCare",
+    type: "Android Dev",
+    previewText: "MentalCare is a mental health application designed to help users assess their psychological well-being through the clinically validated PHQ-9 (Patient Health Questionnaire-9) screening method.",
+  },
+  {
     name: "PMI Pusdiklat Jateng App",
     type: "Android Dev",
     previewText: "A web-based room reservation system developed for the PMI Training Center in Central Java.",
   },
+  {
+    name: "Mevent",
+    type: "UI/UX",
+    previewText: "An Application to manage a task, and we got 2nd place winner at UI/UX Competition.",
+  },
+  {
+    name: "Desaged",
+    type: "UI/UX",
+    previewText: "DesaGED is an interactive tourism application that leverages Augmented Reality (AR) and Virtual Reality (VR) technologies to enhance the visitor experience in rural tourism villages. ",
+  },
+
 ];
 
 const certifications = [

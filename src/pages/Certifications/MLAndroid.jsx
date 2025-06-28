@@ -70,18 +70,18 @@ const MLAndroid = () => {
             >
                 {/* Kiri: Detail Info */}
                 <div className="md:col-span-2 flex flex-col gap-2">
-                    <div className="flex items-center">
-                    <span className="bg-black  px-4 py-1 rounded-full text-white text-l md:text-xl mr-4 md:mr-6 mb-2">Date</span>
-                    <p className="text-l font-semibold md:text-xl">2024</p>
-                    </div>
-                    <div className="flex items-center">
-                    <span className="bg-black  px-4 py-1 rounded-full text-white text-l md:text-xl mr-4 md:mr-6 mb-2">Type</span>
-                    <p className="text-l font-semibold md:text-xl">Machine Learning</p>
-                    </div>
-                    <div className="flex items-center">
-                    <span className="bg-black  px-7 py-1 rounded-full text-white text-l md:text-xl mr-4 md:mr-6">By</span>
-                    <p className="text-l font-semibold md:text-xl">Dicoding</p>
-                    </div>
+                    {[
+                        { label: "Date", value: "2024" },
+                        { label: "Type", value: "Machine Learning for Android" },
+                        { label: "By:", value: "Dicoding" },
+                    ].map((item, idx) => (
+                        <div className="flex items-center" key={idx}>
+                        <span className="bg-black text-white px-4 py-1 rounded-full text-l md:text-xl mb-2 mr-4 md:mr-6 min-w-[90px] text-center">
+                            {item.label}
+                        </span>
+                        <p className="text-l font-semibold md:text-xl">{item.value}</p>
+                        </div>
+                    ))}
                 </div>
 
                 {/* Kanan: Deskripsi */}

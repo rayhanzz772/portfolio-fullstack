@@ -11,6 +11,9 @@ import WeCare from './pages/Projects/WeCare';
 import Sitari from './pages/Projects/Sitari';
 import SoilAI from './pages/Projects/SoilAI';
 import PMI from './pages/Projects/PMI';
+import MentalCare from './pages/Projects/MentalCare';
+import Mevent from './pages/Projects/Mevent';
+import Desaged from './pages/Projects/Desaged';
 
 // Certifiactions Page
 import AppliedML from './pages/Certifications/AppliedML';
@@ -36,6 +39,9 @@ function App() {
         <Route path="/projects/wecare" element={<WeCare />} />
         <Route path="/projects/sitari" element={<Sitari />} />
         <Route path="/projects/soilai" element={<SoilAI />} />
+        <Route path="/projects/mentalcare" element={<MentalCare />} />
+        <Route path="/projects/mevent" element={<Mevent />} />
+        <Route path="/projects/desaged" element={<Desaged />} />
         <Route path="/projects/pmi-pusdiklat-jateng-app" element={<PMI />} />
 
         {/* Certifications App */}
