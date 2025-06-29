@@ -125,7 +125,7 @@ if (category === "certification") {
                 src={img}
                 alt={content.name}
                 className={`mx-auto ${
-                ["Android Developer", "UI/UX Designer"].includes(content.type)
+                ["Android Developer", "UI/UX Designer", "Paper", "UI/UX Competition", "BNSP"].includes(content.type)
                     ? "md:w-4/6"
                     : "w-full"
                 }`}

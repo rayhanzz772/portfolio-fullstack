@@ -2,7 +2,7 @@ const certifications = [
   {
     slug: "appliedml",
     name: "Applied Machine Learning Certification",
-    type: "Machine Learning",
+    type: "Dicoding",
     category: "certification",
     previewText: "Certified by Dicoding, focused on applied Machine Learning.",
     date: "2024",
@@ -22,7 +22,7 @@ const certifications = [
     {
     slug: "mlandroid",
     name: "Machine Learning for Android",
-    type: "Machine Learning, Android",
+    type: "Dicoding",
     category: "certification",
     previewText: "Certified by Dicoding, focused on applied Machine Learning to Android.",
     date: "2024",
@@ -43,12 +43,12 @@ const certifications = [
     {
     slug: "jwdbnsp",
     name: "Junior Web Developer",
-    type: "Website Developer",
     category: "certification",
     previewText: "Web Developer Certified by BNSP.",
     date: "2024",
     by: "BNSP",
     tech: "PHP, CSS",
+    type: "BNSP",
     description: "This professional certification, issued by BNSP (Indonesia’s National Professional Certification Agency), validates my competency in developing and maintaining web applications according to industry standards. It covers essential web development skills such as designing responsive user interfaces, implementing dynamic content using JavaScript, and building server-side functionality with PHP and databases. The certification is nationally recognized and emphasizes practical experience, coding best practices, and adherence to clean, maintainable code structures.",
     designPreview: [
       "/photos/jwdbnsp/prev1.webp",

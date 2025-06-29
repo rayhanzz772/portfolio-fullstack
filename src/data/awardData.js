@@ -2,7 +2,7 @@ const awards = [
   {
     slug: "essay1st",
     name: "1st Place Winner Essay Competition",
-    type: "Competition",
+    type: "Essay Competition",
     category: "award",
     previewText: "Winning an Essay Competition.",
     date: "2023",
@@ -20,7 +20,7 @@ const awards = [
     {
     slug: "uiux2nd",
     name: "2nd Place Winner UI/UX Competition",
-    type: "Competition",
+    type: "UI/UX Competition",
     category: "award",
     previewText: "Winning an UI/UX Competition.",
     date: "2024",
