@@ -3,58 +3,26 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MainPage from './pages/MainPage';     // <- Hero, About, Gallery
 
 // Projects Page
-import Projects from './pages/Projects';     // <- Halaman Projects
-import FloodSenseAI from './pages/Projects/FloodSenseAI';
-import Bumdesma from './pages/Projects/Bumdesma';
-import Sigasi from './pages/Projects/Sigasi';
-import WeCare from './pages/Projects/WeCare';
-import Sitari from './pages/Projects/Sitari';
-import SoilAI from './pages/Projects/SoilAI';
-import PMI from './pages/Projects/PMI';
-import MentalCare from './pages/Projects/MentalCare';
-import Mevent from './pages/Projects/Mevent';
-import Desaged from './pages/Projects/Desaged';
+import Overview from './pages/Overview';     // <- Halaman Projects
+import DetailPage from './pages/DetailPage';
 
 // Certifiactions Page
-import AppliedML from './pages/Certifications/AppliedML';
-import MLAndroid from './pages/Certifications/MLAndroid';
-import JWDBNSP from './pages/Certifications/JWDBNSP';
-import SqlCertified from './pages/Certifications/SqlCertified';
+
 
 // Awards Page
-import EssayUPNVJ from './pages/Awards/EssayUPNVJ';
-import UiuxPolines from './pages/Awards/UiuxPolines';
-import AwardSoilAI from './pages/Awards/AwardSoilAI';
+
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<MainPage />} />
-        {/* Projects App */}
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/projects/floodsenseai" element={<FloodSenseAI />} />
-        <Route path="/projects/bumdesma" element={<Bumdesma />} />
-        <Route path="/projects/sigasi" element={<Sigasi />} />
-        <Route path="/projects/wecare" element={<WeCare />} />
-        <Route path="/projects/sitari" element={<Sitari />} />
-        <Route path="/projects/soilai" element={<SoilAI />} />
-        <Route path="/projects/mentalcare" element={<MentalCare />} />
-        <Route path="/projects/mevent" element={<Mevent />} />
-        <Route path="/projects/desaged" element={<Desaged />} />
-        <Route path="/projects/pmi-pusdiklat-jateng-app" element={<PMI />} />
+        <Route path="/portfolio" element={<Overview />} />
 
-        {/* Certifications App */}
-        <Route path="/certifications/applied-machine-learning" element={<AppliedML />} />
-        <Route path="/certifications/machine-learning-android" element={<MLAndroid />} />
-        <Route path="/certifications/junior-web-developer" element={<JWDBNSP />} />
-        <Route path="/certifications/sql-certified" element={<SqlCertified />} />
-
-        {/* Awards App */}
-        <Route path="/awards/1st-winner-essay-competition" element={<EssayUPNVJ />} />
-        <Route path="/awards/2nd-place-winner-ui/ux-competition" element={<UiuxPolines />} />
-        <Route path="/awards/soilai" element={<AwardSoilAI />} />
-
+        {/* Dynamic detail page untuk semua jenis */}
+        <Route path="/projects/:slug" element={<DetailPage />} />
+        <Route path="/certifications/:slug" element={<DetailPage />} />
+        <Route path="/awards/:slug" element={<DetailPage />} />
       </Routes>
     </Router>
   );

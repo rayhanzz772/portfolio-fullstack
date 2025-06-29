@@ -75,7 +75,7 @@ function Hero() {
                   Software Developer.
                 </h1>
                 
-                <Link to="/projects">
+                <Link to="/portfolio">
                   <div className="mt-2 inline-block text-lg font-medium relative group">
                     <span className="text-black transition-transform duration-300 ease-in-out group-hover:translate-x-1">
                       See Projects →
