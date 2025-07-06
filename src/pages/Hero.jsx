@@ -103,7 +103,7 @@ function Hero() {
             </div>
 
             <div>
-              <p className="text-gray-800 font-semibold">Contact:</p>
+              <p className="text-gray-800 font-semibold">Email:</p>
               <p>rayhanzz772@gmail.com</p>
             </div>
 

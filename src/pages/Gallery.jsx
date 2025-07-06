@@ -43,10 +43,10 @@ const Gallery = () => {
           </div>
 
          <div className="flex w-full h-full pt-5 gap-4 items-start">
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 hidden sm:block">
             <div className="bg-orange-600 w-4 h-4 rounded-full"></div>
           </div>
-          <TextReveal className="text-2xl md:text-4xl xl:text-8xl text-left">
+          <TextReveal className="text-[1.7rem] md:text-4xl xl:text-8xl text-left">
             <h1 className="font-mori">
               Turn <span className="animated-text">complexity</span> into clarity through thoughtful software engineering.
             </h1>
@@ -54,7 +54,7 @@ const Gallery = () => {
         </div>
 
 
-          <div className="my-10">
+          <div className="my-5 sm:my-10">
             {/* Website Dev */}
             <div className="group font-mori flex w-full h-full pt-5 justify-start gap-8 transition-colors duration-300">
               <div className="w-2/6 text-2xl md:text-3xl lg:text-4xl">
