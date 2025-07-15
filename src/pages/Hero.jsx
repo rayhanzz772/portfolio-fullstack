@@ -1,16 +1,23 @@
-import React, { useRef } from 'react';
-import { TypeAnimation } from 'react-type-animation';
-import ButtonProjects from '../components/ButtonProjects';
+import React, { useRef, useState, useEffect } from "react";
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import AnimatedBackground from '../components/AnimatedBackground';
-import TextReveal from '../components/TextReveal';
 import Header from './Header';
-import { Link } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
 function Hero() {
   const sectionRef = useRef(null);
   const { scrollY } = useScroll();
+
+  const [isExiting, setIsExiting] = useState(false);
+  const navigate = useNavigate();
+
+  const handleTransition = () => {
+    setIsExiting(true);
+    setTimeout(() => {
+      navigate('/portfolio'); // halaman tujuan
+    }, 600); // delay sesuai durasi animasi
+  };
+
 
   // Parallax transform
   const yParallax = useTransform(scrollY, [10, 800], [0, 200]);
@@ -75,14 +82,16 @@ function Hero() {
                   Software Developer.
                 </h1>
                 
-                <Link to="/portfolio">
+                <button
+                    onClick={handleTransition}
+                  >
                   <div className="mt-2 inline-block text-lg font-medium relative group">
                     <span className="text-black transition-transform duration-300 ease-in-out group-hover:translate-x-1">
                       See Projects →
                     </span>
                     <span className="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-black transition-all duration-300 ease-in-out group-hover:w-full"></span>
                   </div>
-                </Link>
+                </button>
               </>
             )}
           </div>
@@ -119,7 +128,15 @@ function Hero() {
           </div>
         </div>
       </main>
-
+      {isExiting && (
+  <motion.div
+    className="fixed inset-0 bg-black z-50"
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0 }}
+    transition={{ duration: 0.6 }}
+  />
+)}
     </motion.div>
     </>
   );

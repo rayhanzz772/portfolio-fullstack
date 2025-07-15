@@ -3,7 +3,7 @@ const projects = [
     slug: "floodsenseai",
     name: "FloodSenseAI",
     type: "Android Developer",
-    previewText: "AI-powered flood detection system...",
+    previewText: "FloodSense AI is an intelligent, real-time flood detection and early warning system powered by artificial intelligence and IoT. ",
     date: "2024",
     role: "Android Developer",
     tech: "Flutter",
