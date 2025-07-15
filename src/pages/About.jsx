@@ -57,7 +57,7 @@ const About = () => {
                       <img 
                         src={saya} 
                         alt="Tim di MinimalFrame" 
-                        className="w-full h-auto object-cover"
+                        className="w-full h-auto object-cover rounded-lg md:rounded-none"
                         onError={(e) => {
                           e.target.onerror = null;
                           e.target.src = 'https://placehold.co/600x400/e2e8f0/4a5568?text=Gagal+Memuat+Gambar';
@@ -70,7 +70,7 @@ const About = () => {
 
                   
                       <TextReveal>
-                        <h1  className="text-2xl sm:text-[xl] md:text-[1.6rem] xl:text-[2.6rem] lg:text-[2rem] md:font-bold text-gray-800 leading-tight">
+                        <h1  className="text-justify md:text-left text-[1.4rem] sm:text-[xl] md:text-[1.6rem] xl:text-[2.6rem] lg:text-[2rem] md:font-bold text-gray-800 leading-tight">
                         With over a year of experience developing scalable web and mobile applications, I combine my passion for technology with the discipline I’ve built through running and staying active. 
                         </h1>
                       </TextReveal>
