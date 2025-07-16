@@ -56,7 +56,7 @@ const About = () => {
                     <TextReveal className="md:col-span-1">
                       <img 
                         src={saya} 
-                        alt="Tim di MinimalFrame" 
+                        alt="Rayhan's Picture" 
                         className="w-full h-auto object-cover rounded-lg md:rounded-none"
                         onError={(e) => {
                           e.target.onerror = null;
@@ -70,7 +70,7 @@ const About = () => {
 
                   
                       <TextReveal>
-                        <h1  className="text-justify md:text-left text-[1.4rem] sm:text-[xl] md:text-[1.6rem] xl:text-[2.6rem] lg:text-[2rem] md:font-bold text-gray-800 leading-tight">
+                        <h1  className="text-justify md:text-left text-[1.3rem] sm:text-[xl] md:text-[1.6rem] xl:text-[2.6rem] lg:text-[2rem] md:font-bold text-gray-800 leading-tight">
                         With over a year of experience developing scalable web and mobile applications, I combine my passion for technology with the discipline I’ve built through running and staying active. 
                         </h1>
                       </TextReveal>
@@ -93,6 +93,9 @@ const About = () => {
                       className="w-6 h-6 text-gray-400 group-hover:text-black animate-bounce transition-colors"
                       aria-hidden="true"
                     />
+                    <span className="hidden lg:hidden absolute bg-black select-none pointer-events-none -z-9">
+                          Experiences.
+                        </span>
                   </button>
 
 

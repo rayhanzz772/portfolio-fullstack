@@ -25,7 +25,7 @@ const projects = [
     previewText: "Village enterprise management site. BUMDESMA (Badan Usaha Milik Desa Bersama) Kota Kendal, located in the Ngareanak Subdistrict.",
     date: "2025",
     role: "Fullstack Developer",
-    tech: "Laravel, VPS",
+    tech: "Wordpress, VPS",
     description: "This project involved the development of a professional and responsive website for BUMDESMA (Badan Usaha Milik Desa Bersama) Kota Kendal, located in the Ngareanak Subdistrict. The primary goal was to establish a centralized online presence that effectively showcases BUMDESMA’s programs, financial transparency, and community-driven initiatives. The website was built using WordPress, with a customized theme tailored to the branding and informational needs of the organization. Key features include a news and announcement section, program documentation, gallery, contact form, and integration with Google Maps for accessibility.",
     designPreview: [
       "/photos/bumdesma/prev1.png",
@@ -45,7 +45,7 @@ const projects = [
     previewText: "SIGASI (Sistem Informasi Geospasial Anak Sehat Indonesia) is a web-based Geographic Information System (GIS).",
     date: "2025",
     role: "Frontend Developer",
-    tech: "Tailwind, JavaScript",
+    tech: "Tailwind, JavaScript, VPS",
     description: "SIGASI (Sistem Informasi Geospasial Anak Sehat Indonesia) is a web-based Geographic Information System (GIS) platform specifically designed to support the recording and monitoring of integrated Posyandu (community health posts) activities in Central Java Province, Indonesia. The system enables health workers and local authorities to visualize and manage health data related to children under five years old. It integrates interactive maps with detailed health records, allowing for spatial analysis of child health trends across different regions. A key feature of SIGASI is the implementation of Artificial Intelligence to assist in the early detection of stunting. By analyzing inputted anthropometric data (such as weight, height, and age), the AI can assess the likelihood of stunting conditions in toddlers and provide real-time feedback and alerts for further intervention.",
     designPreview: [
       "/photos/sigasi/prev1.png",
